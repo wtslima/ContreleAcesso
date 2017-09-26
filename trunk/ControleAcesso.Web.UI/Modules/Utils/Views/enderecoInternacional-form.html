@@ -1,0 +1,36 @@
+﻿<!--linha1-->
+<div class="row">
+	<div class="form-group col-sm-6 col-md-4">
+		<label for="pais">País</label>
+		<select class="form-control input-sm" ng-model="endereco.Pais" ng-disabled="dataLoading" ng-options="p.CodigoISO3 +' - '+ p.Nome for p in Paises | orderBy: 'CodigoISO3'" name="pais" id="pais" required>
+			<option selected value="">Selecione um país</option>
+		</select>
+	</div>
+</div>
+<!--linha2-->
+<div class="row">
+	<div class="form-group col-sm-6">
+		<label for="endereco">Endereço</label>
+		<input class="form-control input-sm" type="text" id="endereco" name="endereco" ng-model="endereco.Street" required>
+	</div>
+	<div class="form-group col-sm-6">
+		<label for="complemento">Complemento</label>
+		<input class="form-control input-sm" type="text" id="complemento" name="complemento" ng-model="endereco.Complemento">
+	</div>
+</div>
+<!--linha3-->
+<div class="row">
+	<div class="form-group col-sm-4">
+		<label for="cidade">Cidade</label>
+		<input class="form-control input-sm" type="text" id="cidade" name="cidade" ng-model="endereco.Cidade" required>
+	</div>
+	<div class="form-group col-sm-4">
+		<label for="estado">Estado</label>
+		<input class="form-control input-sm" type="text" id="estado" name="estado" ng-model="endereco.Estado" aria-describedby="estado-descricao" required>
+		<span class="help-block" id="estado-descricao">Estado, Província ou Região</span>
+	</div>
+	<div class="form-group col-sm-4">
+		<label for="codigopostal">Código postal</label>
+		<input class="form-control input-sm" type="text" id="codigopostal" name="codigopostal" ng-model="endereco.ZipCode" required>
+	</div>
+</div>

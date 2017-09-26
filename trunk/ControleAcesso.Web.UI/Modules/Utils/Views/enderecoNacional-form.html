@@ -1,0 +1,64 @@
+﻿<div class="row">
+	<div class="form-group col-sm-2">
+		<label for="cep">CEP</label>
+		<input class="form-control input-sm" type="text" id="cep" name="cep" ui-mask="99.999-999" ng-model="endereco.CEP" ng-blur="buscarCEP()" required>
+	</div>
+	<div class="form-group col-xs-3 col-sm-2">
+		<label for="tipologradouro">Logradouro</label>
+		<select class="form-control input-sm" name="tipologradouro" id="tipologradouro" required="required" ng-model="endereco.Logradouro.Tipo" ng-disabled="dataLoading || disableLogradouro"
+				ng-options="tl.Descricao for tl in TiposLogradouros | orderBy: 'Descricao'">
+			<option selected="selected" value="">Selecione</option>
+		</select>
+	</div>
+	<div class="form-group col-xs-9 col-sm-5">
+		<label for="logradouro">Nome</label>
+		<input class="form-control input-sm" type="text" id="logradouro" name="logradouro" ng-model="endereco.Logradouro.Nome" required ng-disabled="dataLoading || disableLogradouro">
+	</div>
+	<div class="form-group col-xs-6 col-sm-2">
+		<label for="numero">Número</label>
+		<input class="form-control input-sm" type="text" id="numero" name="numero" ng-model="endereco.Numero" required ng-disabled="dataLoading">
+	</div>
+</div>
+<!--linha2-->
+<div class="row">
+	<div class="form-group col-xs-6 col-sm-3">
+		<label for="complemento">Complemento</label>
+		<input class="form-control input-sm" type="text" id="complemento" name="complemento" ng-model="endereco.Complemento" ng-disabled="dataLoading">
+	</div>
+	<div class="form-group col-sm-3">
+		<label for="bairro">Bairro</label>
+		<input class="form-control input-sm" type="text" id="bairro" name="bairro" ng-model="endereco.Logradouro.BairroInicial.Nome" required ng-disabled="dataLoading || disableBairro">
+	</div>
+	<div class="form-group col-sm-3">
+		<label for="cidade">Cidade</label>
+		<!--<input class="form-control input-sm" type="text" id="cidade" name="cidade" ng-model="endereco.Logradouro.Localidade.Nome" required>-->
+		<br />{{endereco.Logradouro.Localidade.Nome}}
+	</div>
+	<div class="form-group col-sm-3">
+		<label for="uf">UF</label>
+		<!--<select class="form-control input-sm" ng-model="endereco.Logradouro.UF" ng-disabled="dataLoading" ng-options="uf.Nome for uf in UnidadesFederativas | orderBy: 'Nome'" name="uf" id="uf">
+			<option selected value="">Selecione</option>
+		</select>-->
+		<br />{{endereco.Logradouro.UF.Nome}}
+	</div>
+</div>
+<!--linha3-->
+<div class="row">
+	<fieldset>
+		<legend class="col-xs-12">Coordenadas</legend>
+		<div class="form-group col-sm-4">
+			<label for="latitude">Latitude</label>
+			<input class="form-control input-sm" type="text" id="latitude" name="latitude" ng-model="endereco.Geolocalizacao.Latitude">
+		</div>
+		
+		<div class="form-group col-sm-4">
+			<label for="longitude">Longitude</label>
+			<input class="form-control input-sm" type="text" id="longitude" name="longitude" ng-model="endereco.Geolocalizacao.Longitude">
+		</div>
+		
+		<div class="form-group col-sm-4">
+			<label for="altitude">Altitude</label>
+			<input class="form-control input-sm" type="text" id="altitude" name="altitude" ng-model="endereco.Geolocalizacao.Altitude">
+		</div>
+	</fieldset>
+</div>

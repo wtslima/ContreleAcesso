@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Autenticacao">
+  <logicalClassDesignerModelMoniker Id="2e228f56-98dd-46a6-b529-17dedd4c0f15" />
+  <nestedChildShapes>
+    <classShape Id="fe7964fc-cfc4-4d00-9c19-2deb62269abe" absoluteBounds="0.5, 0.625, 3, 1.6683043545484546" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="f3a79819-c42e-4c3f-819a-ef6c5897a8ef" LastKnownName="UsuarioExterno" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="120553c5-b640-41f5-b51f-bb987bb00ec3" absoluteBounds="0.515, 1.1403356393178306, 2.9699999999999998, 0.68164060264825821" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="8fb6e314-57f1-4e97-b6aa-9e25165a618d" absoluteBounds="0.515, 1.8319762419660888, 2.9699999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9dd701d8-1c2f-406c-a147-0118c76ee2f0" absoluteBounds="4.625, 2.25, 2.5, 2.3089293346802391" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="fc9fa45c-5443-40ec-bbe9-ebf18b7102fb" LastKnownName="UsuarioExternoSenha" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="2bb52278-5c02-4c58-a0d2-7e34857fb97a" absoluteBounds="4.64, 2.7653356393178306, 2.4699999999999998, 1.3222655827800431" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b129d970-ca80-4973-9b7a-d240061b5224" absoluteBounds="4.64, 4.0976012220978735, 2.4699999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 3.42611734461435); (2 : 3.42611734461435); (2 : 2.29330435454845)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1..2" targetMultiplicity="1">
+      <associationMoniker Id="5fe62238-ed8d-4ed1-a762-dc437b3bcfa2" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="9dd701d8-1c2f-406c-a147-0118c76ee2f0" />
+        <classShapeMoniker Id="fe7964fc-cfc4-4d00-9c19-2deb62269abe" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings>
+    <add key="API.BaseAddess" xdt:Transform="Remove" xdt:Locator="Match(key)" />
+    <add key="Corporativo.API.BaseAddess" xdt:Transform="Remove" xdt:Locator="Match(key)" />
+    <add key="Corporativo.API.BaseAddess" value="http://ws-corporativo-d.inmetro.gov.br/" xdt:Transform="Insert" />
+  </appSettings>
+</configuration>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1c7eeae2-6878-4631-b63c-1d645f0ff768" name="Autenticacao" linkedPackageId="fd50391e-7c1d-40f6-9c2c-0565dd028325" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d093150b-bcd3-4686-9313-361866ed6dfa">
+      <elementDefinition Id="28c412bf-143c-42a4-bd11-8b4ad83e8150" />
+      <body>Senha temporária válida
+- A senha existe;
+- A senha não está expirada;
+- A senha é igual à informada.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="a9c9006e-149f-4045-9d43-c45b4902e08d" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="965754ba-a417-4a27-a150-1ee527677f84" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5c5f57b4-02f8-41dc-80b7-faa2a4fc66ee">
+          <propertyInstance Id="89d11b01-fb50-4dc9-99ac-71e2e9de9a1d" name="BaseName">
+            <elementDefinition Id="1c1a6bc1-563c-41b8-b684-4fb61fc4bd74" />
+          </propertyInstance>
+          <elementDefinition Id="2e1c601d-4389-4fb4-8c67-cd61d2426c6a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cec46d58-a1df-4df7-9cb0-ec9c130ed5c9">
+          <propertyInstance Id="eee18a31-3abe-4f6a-90af-fa2acefd8638" name="ClrAttributes">
+            <elementDefinition Id="10e9be00-b70f-44c4-9584-37c5a11ef2fa" />
+          </propertyInstance>
+          <elementDefinition Id="49107930-e741-477d-913f-93a52271f592" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4371dfa7-184e-4d29-ac68-652dafc530e5">
+          <propertyInstance Id="9c6c5150-3715-4c16-b9e8-72976c1a9eaf" name="Usings">
+            <elementDefinition Id="d90e88b8-34aa-4f77-9069-770366529663" />
+          </propertyInstance>
+          <elementDefinition Id="d7274944-12b4-4d9c-b83e-3951eb6e46ba" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="bbe70f84-d6e7-4143-b8c0-5ab18c7a54ff" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="bf445d10-d0f5-41fb-aed9-d93c5bdcbf84" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="84d2fe34-b2db-4cb8-917c-4bc998e26d81">
+          <propertyInstance Id="287bb0e7-fd7a-4346-a3c3-c598ab727f1b" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="875d74a1-c507-4b08-a496-4661114a613a" />
+          </propertyInstance>
+          <elementDefinition Id="807694d1-8508-42a6-b9a1-2754e1ac13b5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f72d2a00-1fbe-4919-a588-f6a2dd61dda1">
+          <propertyInstance Id="25b5c3d8-0851-489b-a036-5145dd4973f0" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="115f355e-fa61-45fc-a1c0-52da182f12ef" />
+          </propertyInstance>
+          <elementDefinition Id="8a5e5633-9517-4ea0-9a4d-8c2f23a8714b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f06e1b4b-1cb4-4f6f-86d0-a2611f3257aa">
+          <propertyInstance Id="c371646b-eca4-4d7f-9bb5-81608332221f" name="ProjectPath" value="ClassTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|EnumTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|InterfaceTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|StructTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj">
+            <elementDefinition Id="a8a9820f-e071-4745-bec0-c0a41df6b3a9" />
+          </propertyInstance>
+          <elementDefinition Id="e923708e-5a9d-4741-b5c7-20f6d6ab32a3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7750c244-80a4-43e1-af25-1966033ed4f9">
+          <propertyInstance Id="85faa92d-b431-4427-b6d2-c3613131ba81" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="9216b8ba-df35-4c7f-b25e-ee6b8ceba42f" />
+          </propertyInstance>
+          <elementDefinition Id="1a01e588-b44d-4710-8808-19ff8e8ca430" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c43376af-cc48-4b87-a5d0-677321e85e7b">
+          <propertyInstance Id="c9931b99-5bd0-4e42-9321-99b5157c6fe6" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c5c94d87-c034-4576-b77c-714da6010f01" />
+          </propertyInstance>
+          <elementDefinition Id="a13c5959-68e0-400e-9b5b-39620e7d2427" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2e0425ff-429e-4c50-b19c-2e8c1d31d954">
+          <propertyInstance Id="e287ffd1-23cc-4e60-bcd2-30af471f3750" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="3ed04bce-7467-4c4d-840d-250a9808c957" />
+          </propertyInstance>
+          <elementDefinition Id="2674a9f1-ad79-42eb-91a3-83cb06bd30ef" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="24f36af1-aac0-49c4-a7a2-fe01110866f8">
+          <propertyInstance Id="b3058ed3-075a-40c9-9157-984bc03bb4ac" name="Parameters">
+            <elementDefinition Id="26ed2e63-5a07-4c7f-bb11-4608d00160af" />
+          </propertyInstance>
+          <elementDefinition Id="db41d180-9e81-4a7c-b13b-21663dd5f6a4" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b743baaa-6568-4c72-ac32-9ce67526524a" name="Autenticacao" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="dfd6b8d1-029d-4180-8d76-21d304773710" />
+        <nodes>
+          <initialNode Id="7dc3850b-afcd-4508-94ba-436bba7adf65" name="Início" isLeaf="false">
+            <elementDefinition Id="a86fb357-c464-46af-9d45-16218f9a6c60" />
+            <flowNodeTargets>
+              <controlFlow Id="f8fa76bf-29c1-4185-b357-e4f6964fbddf" isLeaf="false">
+                <opaqueActionMoniker Id="8222f797-b6f8-4641-8007-18329a33a106" LastKnownName="Verificar existência do usuário" />
+                <elementDefinition Id="ae2ffaa8-1768-4a1a-905e-32725aa658b1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="8222f797-b6f8-4641-8007-18329a33a106" name="Verificar existência do usuário" isLeaf="false">
+            <elementDefinition Id="9987d134-f143-473e-8e6a-8822d79d3e36" />
+            <flowNodeTargets>
+              <controlFlow Id="06f3d70e-b011-40ee-bb32-94c33a6c50fe" name="Existem senhas para o usuário?" isLeaf="false">
+                <decisionNodeMoniker Id="1d631efc-00e8-486d-a34d-e4f1f2dc50fb" LastKnownName="Existem senhas para o usuário?" />
+                <elementDefinition Id="f236d7b5-2665-40ac-9571-c41fdcf1a391" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="1d631efc-00e8-486d-a34d-e4f1f2dc50fb" name="Existem senhas para o usuário?" isLeaf="false">
+            <elementDefinition Id="51749df1-b8f3-4b96-8a02-dfe7306149b5" />
+            <flowNodeTargets>
+              <controlFlow Id="f6aaa463-1500-4395-a733-75b47ca58ef6" guard="O usuário não existe" isLeaf="false">
+                <opaqueActionMoniker Id="77c1edc0-2f99-4325-a84b-955ac57e64e6" LastKnownName="Informar login ou senha inválidos" />
+                <elementDefinition Id="02ae6a31-2186-4111-8baa-339d0cb97fd7" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="674eae7c-d8ff-42b6-8e7b-2a3c3f8a9fdd" guard="O usuário existe" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityParameterNodeMoniker Id="bf809555-d9b7-46c8-b99b-6b395f23ba12" LastKnownName="Validar Senha" />
+                <elementDefinition Id="bbde3d16-9e62-4439-b614-c26ff8f94c97" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode Id="19c3c739-10b5-4ed7-b141-0bbcf222e470" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2" />
+          </activityFinalNode>
+          <opaqueAction Id="77c1edc0-2f99-4325-a84b-955ac57e64e6" name="Informar login ou senha inválidos" isLeaf="false">
+            <elementDefinition Id="aeea96f7-4679-43e6-a170-bb112551c079" />
+            <flowNodeTargets>
+              <controlFlow Id="e08bd681-0fcc-44ba-9998-47517d155d3e" isLeaf="false">
+                <activityFinalNodeMoniker Id="19c3c739-10b5-4ed7-b141-0bbcf222e470" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f00f1d2f-cdef-4d7d-87a1-bb633417b412" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityParameterNode Id="bf809555-d9b7-46c8-b99b-6b395f23ba12" name="Validar Senha" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="d0c2603c-2f20-4303-ba68-1bb6c1292997" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="21b904de-7a5f-44c9-aa8d-0ec283a0ee29" LastKnownName="UsuarioExternoSenha" />
+            </type_NamedElement>
+            <objectFlowTargets>
+              <objectFlow Id="507ac72c-aa9b-4786-bdf0-44d39a70395c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <decisionNodeMoniker Id="4ad95dc7-56a7-4190-92a1-31eacbc3a5f0" LastKnownName="Decision1" />
+                <elementDefinition Id="53dd6bc0-9255-41b5-9523-8ede8830276f" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="1766e72f-29a6-4a5b-a108-de6b8a3fa4fd" name="2147483647" value="2147483647">
+                <elementDefinition Id="f4502486-d184-428e-932a-ccbeb714683b" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode Id="83d1a31a-3b13-4d0d-9cd2-08e8bd696d02" name="Alterar senha" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="341c492c-651d-4734-a76b-537544d708f1" />
+            <objectFlowTargets>
+              <objectFlow Id="cb952e68-e7fd-4b77-9a51-aee9ae71539d" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="19c3c739-10b5-4ed7-b141-0bbcf222e470" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="7d5303ac-0270-4b2d-9454-5d4248417d25" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="b18102b2-76eb-480f-b3eb-acdfd693d9a6" name="2147483647" value="2147483647">
+                <elementDefinition Id="34ab5952-777c-4afd-acac-9cf512c886ba" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <decisionNode Id="4ad95dc7-56a7-4190-92a1-31eacbc3a5f0" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e54a662f-e4f7-452b-a3a9-d605c1297b4b" />
+            <flowNodeTargets>
+              <controlFlow Id="ead59134-b311-433a-884e-9a7878f4bfe9" guard="Senha permanente válida" isLeaf="false">
+                <activityFinalNodeMoniker Id="19c3c739-10b5-4ed7-b141-0bbcf222e470" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="90f4261c-c530-4c0f-bdd6-395fce51f45c" />
+              </controlFlow>
+              <controlFlow Id="661e1c11-6f21-4d15-b4f4-0eafc33e5a87" guard="Senha inválida" isLeaf="false">
+                <opaqueActionMoniker Id="77c1edc0-2f99-4325-a84b-955ac57e64e6" LastKnownName="Informar login ou senha inválidos" />
+                <elementDefinition Id="110fcf59-2a2c-4840-8c40-ba92343b127e" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="010d8651-f61c-4298-a3f8-2ba4ca89e923" guard="Senha temporária válida" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityParameterNodeMoniker Id="83d1a31a-3b13-4d0d-9cd2-08e8bd696d02" LastKnownName="Alterar senha" />
+                <elementDefinition Id="2f34df84-6f85-4198-96ac-18b9c6df634f" />
+              </objectFlow>
+              <objectFlow Id="8fc17e3c-86ec-4e07-958b-d719715e4432" guard="Senha temporária expirada" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="be20cc8d-c93f-40eb-8af6-890ee0ea939c" LastKnownName="Gerar Senha Temporária" />
+                <elementDefinition Id="0dafafdc-6faa-4303-8bf4-74dd49f694fb" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode Id="be20cc8d-c93f-40eb-8af6-890ee0ea939c" name="Gerar Senha Temporária" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a7ad819c-37b0-4bb5-b0ab-0cc85a43e87d" />
+            <objectFlowTargets>
+              <objectFlow Id="d295e344-0942-4f78-9ca2-4f7aff486d5e" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="19c3c739-10b5-4ed7-b141-0bbcf222e470" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="acfccac0-3537-478f-8353-254879eeffde" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="2057cb50-69d4-4e5d-840b-f2c6737035b2" name="2147483647" value="2147483647">
+                <elementDefinition Id="b3f6ee68-e540-4117-9c71-6e89d76ee6a9" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+    <packageHasNamedElement>
+      <referencedType Id="21b904de-7a5f-44c9-aa8d-0ec283a0ee29" name="UsuarioExternoSenha" isAbstract="false" isLeaf="false" cachedFullName="ControleAcesso.Modelagem::UsuarioExternoSenha">
+        <elementDefinition Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="fd50391e-7c1d-40f6-9c2c-0565dd028325" name="ControleAcesso.Modelagem">
+    <elementDefinition Id="aba2b6c5-2376-4bd2-b278-f4c9f0211d26" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4423c1dc-0f03-4141-a097-430e7b5297bc">
+        <profileInstance Id="fe25d8f8-1b2c-463e-9815-12492d8e7da2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e44cacae-7dc3-453c-ac5c-4df5e330ff37">
+        <profileInstance Id="27ec6112-007a-49be-9c7c-3352cd1e73b8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1b8a3bd5-996b-4578-93fd-29c559b3a0a2">
+        <profileInstance Id="0d416c67-11f2-413b-bc34-41c00b1939f8" name="CSharpProfile">
+          <elementDefinition Id="0410f050-aef2-4266-ad83-c3b287c24b8a" />
+        </profileInstance>
+        <elementDefinition Id="1339c489-2fe4-4a8f-b4fd-e91dc63fbf34" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="37b186ac-4c5d-477f-818c-76c89020962f">
+        <profileInstance Id="15587264-01be-49fa-a7a9-13d902d0c5c1" name="TextTemplateBindings">
+          <elementDefinition Id="d9f6529a-80a4-4ab2-ada1-2abb629a0a10" />
+        </profileInstance>
+        <elementDefinition Id="116c842e-ef55-40ad-8167-88f7bf569270" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

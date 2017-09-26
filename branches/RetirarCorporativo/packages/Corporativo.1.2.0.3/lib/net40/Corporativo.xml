@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Corporativo</name>
+    </assembly>
+    <members>
+        <member name="T:Corporativo.Dominio.Exceptions.CepNaoEncontradoException">
+            <summary>
+            Exceção para CEP não encontrado.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Dominio.Repositorios.IConexao.ObterClasse(System.String)">
+            <summary>
+            (Quando implementado) retorna o nome da classe (entidade) utilizada para mapear uma determinada tabela do banco de dados.
+            </summary>
+            <param name="nomeTabela">Nome da tabela a ser consultada.</param>
+            <returns>Nome da classe (entidade) para a qual a tabela foi mapeada.</returns>
+        </member>
+        <member name="M:Corporativo.Dominio.Repositorios.IConexao.ObterSessaoSemEstado">
+            <summary>
+            Retorna uma sessão (sem estado) do NHibernate para a execução de ações de persistência.
+            </summary>
+            <remarks>A principal diferença entre esta sessão e a retornada pelo método <see cref="!:ObterSessao()"/> é que<br/>
+            a sessão criada por este método não utiliza o cache de nível 1 do NHibernate, tornando-a mais interessante para operações em batch.
+            </remarks>
+            <returns>Sessão (sem estado) do NHibernate.</returns>
+        </member>
+        <member name="P:Corporativo.Dominio.Repositorios.IConexao.SchemaPadrao">
+            <summary>
+            Schema de banco de dados padrão para os mapeamentos do NHibernate (quando aplicável).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Infraestrutura.GerenciadorSessao.SemEstado">
+            <summary>
+            Operações e propriedades dentro de uma sessão sem estado.
+            (O próprio objeto gerencia a abertura e encerramento da sessão.)
+            </summary>
+        </member>
+        <member name="T:Corporativo.Infraestrutura.GerenciadorSessao.SessaoSemEstado">
+            <summary>
+            Trabalha com operações em transações dentro de uma sessão sem estado.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Infraestrutura.GerenciadorSessao.SessaoSemEstado.AbrirTransacao">
+            <summary>
+            Abre uma nova transação.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Infraestrutura.GerenciadorSessao.SessaoSemEstado.FecharTransacao(System.Boolean)">
+            <summary>
+            Encerra a transacao atualmente ativa.
+            </summary>
+            <param name="commit">True para realizar 'Commit' na transação e False para 'Rollback'.</param>
+        </member>
+        <member name="P:Corporativo.Infraestrutura.GerenciadorSessao.SessaoSemEstado.TemTransacaoAtiva">
+            <summary>
+            Retorna a presença de uma transação ativa.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Infraestrutura.MsSql.Conexao">
+            <summary>
+            Classe responsável pela conexão com o banco de dados e gerenciamento das sessões do NHibernate.
+            </summary>
+        </member>
+        <member name="F:Corporativo.Infraestrutura.MsSql.Conexao._config">
+            <summary>
+            Configuração aplicada ao NHibernate.
+            </summary>
+        </member>
+        <member name="F:Corporativo.Infraestrutura.MsSql.Conexao._impersonatedUser">
+            <summary>
+            Usuário impersonalizado para realizar a conexão com o banco de dados (quando aplicável).<br />
+            Esta variável é utilizada para ajudar a garantir que conexão com o bando seja sempre realizada pelo usuário que foi definido no arquivo '.config'.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Infraestrutura.MsSql.Conexao.#ctor(System.String,System.Reflection.Assembly[])">
+            <summary>
+            Retorna um objeto de conexão.
+            </summary>
+            <param name="connectionStringConfigName">String de conexão com o banco de dados.</param>
+            <param name="assemblyMappings">Assembly onde estão os mapeamentos de classes (utilizando Fluent NHibernate)</param>
+        </member>
+        <member name="T:ControleAcesso.Dominio.Infra.Tipos.AtivacaoTipo">
+            <summary>
+            Description of AtivacaoTipo.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Infraestrutura.Tipos.TipoSexoTipo">
+            <summary>
+            Description of TipoSexoTipo.
+            </summary>
+        </member>
+    </members>
+</doc>

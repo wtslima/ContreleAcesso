@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="cade2869-cab1-452c-91cf-bce7d72582c8" name="AlterarSenha" linkedPackageId="d5690c6c-1037-4447-8b45-572eb656f90d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="85b635df-917b-454c-ad56-96d8e9c27e0e" name="AlterarSenha" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b9be9410-6851-4db6-9a60-b44ee66c00db" />
+        <nodes>
+          <initialNode Id="b7eebf0e-4a7c-4683-8729-80ad33a118a0" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a7efc38a-ee8a-4359-9c32-0011556517f0" />
+            <objectFlowTargets>
+              <objectFlow Id="1cc58f53-ef20-4e2d-94aa-117a1272fab3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityParameterNodeMoniker Id="aa973793-6a9a-4c92-8dd7-b5814eb2273a" LastKnownName="Validar Senha atual" />
+                <elementDefinition Id="32c1db4e-b94c-494f-a235-cfe7dfa3825c" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <decisionNode Id="2f40f8b2-e35b-4567-9360-b912f9c8a85a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="6e2c9673-82b8-4020-ad0c-ebc04f9b1ba0" />
+            <flowNodeTargets>
+              <controlFlow Id="992028c2-58cb-48fb-9e5e-0592aabe0580" guard="Senha incorreta" isLeaf="false">
+                <opaqueActionMoniker Id="b7901d46-d5c6-4770-8506-13683bd53d3b" LastKnownName="Avisar que senha atual&#xD;&#xA;informada está incorreta" />
+                <elementDefinition Id="48f42484-9c8a-434f-82ee-f9ac15acfcc9" />
+              </controlFlow>
+              <controlFlow Id="a1a40f39-96de-4da8-b100-a715843cf8db" guard="Senha correta" isLeaf="false">
+                <opaqueActionMoniker Id="a86574fc-d4c8-4166-b920-b87d091a4802" LastKnownName="Alterar senha permanente" />
+                <elementDefinition Id="fe28dc19-d563-4e04-8c07-4189ccb7f935" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="b7901d46-d5c6-4770-8506-13683bd53d3b" name="Avisar que senha atual&#xD;&#xA;informada está incorreta" isLeaf="false">
+            <elementDefinition Id="e1f5020f-3297-4fa0-a8b9-018a0191abda" />
+            <flowNodeTargets>
+              <controlFlow Id="2d64e090-88d6-49e3-b25e-4648796277bf" isLeaf="false">
+                <activityFinalNodeMoniker Id="e2bf7a3d-e60b-4971-bc2c-6288f6ab2683" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="23b0a639-6fae-424c-871d-70b7b18ab425" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e2bf7a3d-e60b-4971-bc2c-6288f6ab2683" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="26d8406c-fbb6-421c-9841-b59cd2e7265e" />
+          </activityFinalNode>
+          <activityParameterNode Id="aa973793-6a9a-4c92-8dd7-b5814eb2273a" name="Validar Senha atual" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="06538c65-ba86-4a05-b706-deadb6da73dc" />
+            <objectFlowTargets>
+              <objectFlow Id="35c3d1a8-b968-498d-a928-32dafdad5bbf" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <decisionNodeMoniker Id="2f40f8b2-e35b-4567-9360-b912f9c8a85a" LastKnownName="Decision1" />
+                <elementDefinition Id="305e465c-0cf2-474a-9430-6eea7dcdddc6" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="f1a4e2c7-8b82-4918-a4e9-53e210931022" name="2147483647" value="2147483647">
+                <elementDefinition Id="3a48b8e7-5734-40b2-9d3c-d4095f91d8a3" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction Id="a86574fc-d4c8-4166-b920-b87d091a4802" name="Alterar senha permanente" isLeaf="false">
+            <elementDefinition Id="a9d25a08-77d5-4619-b216-b6286c87335a" />
+            <flowNodeTargets>
+              <controlFlow Id="5fa343c4-17f3-497f-b0bd-b37597a57f59" isLeaf="false">
+                <decisionNodeMoniker Id="b45e2de7-8658-405d-b9eb-34187c98660b" LastKnownName="Decision2" />
+                <elementDefinition Id="48a34a08-4d2f-45f8-b27e-b86f160fa7a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b45e2de7-8658-405d-b9eb-34187c98660b" name="Decision2" isLeaf="false">
+            <elementDefinition Id="527a4b21-3149-4bac-8621-8e340fe7f6ef" />
+            <flowNodeTargets>
+              <controlFlow Id="e38ce05b-2ba2-4e28-b299-24890e727efc" guard="A senha informada é permanente" isLeaf="false">
+                <activityFinalNodeMoniker Id="e2bf7a3d-e60b-4971-bc2c-6288f6ab2683" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4b10dcd1-7b8e-4964-ad16-b3a1e3168f85" />
+              </controlFlow>
+              <controlFlow Id="3e26f0dd-3f29-405d-abec-72d7aadefa20" guard="A senha informada é temporária" isLeaf="false">
+                <opaqueActionMoniker Id="1f061010-4976-473f-9926-63101374befb" LastKnownName="Excluir registro da senha temporária" />
+                <elementDefinition Id="c32c4174-986e-41f7-8222-1d53c884e518" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="1f061010-4976-473f-9926-63101374befb" name="Excluir registro da senha temporária" isLeaf="false">
+            <elementDefinition Id="43a1b1d9-0ea4-4cc7-8c90-dcdf1ffe7485" />
+            <flowNodeTargets>
+              <controlFlow Id="c669b4cb-3efd-4bf8-82bd-661997e62c6b" isLeaf="false">
+                <activityFinalNodeMoniker Id="e2bf7a3d-e60b-4971-bc2c-6288f6ab2683" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="dc183aec-2fd8-47ee-a918-910230152579" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d5690c6c-1037-4447-8b45-572eb656f90d" name="Servir.Modelagem">
+    <elementDefinition Id="aba2b6c5-2376-4bd2-b278-f4c9f0211d26" />
+    <profileInstances>
+      <packageHasProfileInstances Id="04f185c3-8b8d-4f69-8404-b842eff000a0">
+        <profileInstance Id="d3f7e918-7a9f-4bcc-b6a1-f158ed40bcbd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="70a40d48-beba-4f31-bf42-c300ff91490b">
+        <profileInstance Id="6c443cd1-4edf-4246-ae2e-53a1cca175b0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

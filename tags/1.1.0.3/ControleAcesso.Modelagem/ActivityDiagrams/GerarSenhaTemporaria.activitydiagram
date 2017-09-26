@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="52d33704-d151-41cc-b490-126e6be44ff5" name="GerarSenhaTemporaria" linkedPackageId="eb8a9cbc-41b8-4b17-bcf4-38680be3b919" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="d0331dfa-00c0-4c60-9d77-451c7ad7b594" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="965754ba-a417-4a27-a150-1ee527677f84" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a939788a-8719-4beb-af49-6f5c9eede457">
+          <propertyInstance Id="613af456-06c2-46c4-9f40-69190bb7de75" name="BaseName">
+            <elementDefinition Id="1c1a6bc1-563c-41b8-b684-4fb61fc4bd74" />
+          </propertyInstance>
+          <elementDefinition Id="2e1c601d-4389-4fb4-8c67-cd61d2426c6a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="79fa3daf-74ce-4169-a3d4-2a6cde909f7a">
+          <propertyInstance Id="8fdf98b7-331a-463a-90cf-a5d282cd05b2" name="ClrAttributes">
+            <elementDefinition Id="10e9be00-b70f-44c4-9584-37c5a11ef2fa" />
+          </propertyInstance>
+          <elementDefinition Id="49107930-e741-477d-913f-93a52271f592" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a0db2b25-2ef5-4365-8f27-d43c65cb669d">
+          <propertyInstance Id="1103c5ef-472d-4631-b5f3-c23ca3300876" name="Usings">
+            <elementDefinition Id="d90e88b8-34aa-4f77-9069-770366529663" />
+          </propertyInstance>
+          <elementDefinition Id="d7274944-12b4-4d9c-b83e-3951eb6e46ba" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="e526ff2f-d9c0-46c0-b9ac-e4a4877aa5f6" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="bf445d10-d0f5-41fb-aed9-d93c5bdcbf84" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fa2ca326-4d2a-4dae-bea2-7c18355b7776">
+          <propertyInstance Id="a9316250-1b5c-40e0-84fd-34712c02971d" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="875d74a1-c507-4b08-a496-4661114a613a" />
+          </propertyInstance>
+          <elementDefinition Id="807694d1-8508-42a6-b9a1-2754e1ac13b5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="842369f0-11bc-4801-9d2b-36a57681889d">
+          <propertyInstance Id="648a858c-b74d-4628-908a-c62d62765662" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="115f355e-fa61-45fc-a1c0-52da182f12ef" />
+          </propertyInstance>
+          <elementDefinition Id="8a5e5633-9517-4ea0-9a4d-8c2f23a8714b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="87497fb7-4b62-4de5-bc90-1a209c734e7a">
+          <propertyInstance Id="1d1b49f5-ef38-418c-ba44-15e0968c4ac3" name="ProjectPath" value="ClassTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|EnumTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|InterfaceTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|StructTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj">
+            <elementDefinition Id="a8a9820f-e071-4745-bec0-c0a41df6b3a9" />
+          </propertyInstance>
+          <elementDefinition Id="e923708e-5a9d-4741-b5c7-20f6d6ab32a3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="943973c5-3a42-4183-bc49-b3f0552164b4">
+          <propertyInstance Id="01edfcfe-f435-4a14-8eaf-94b4e6b0260a" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="9216b8ba-df35-4c7f-b25e-ee6b8ceba42f" />
+          </propertyInstance>
+          <elementDefinition Id="1a01e588-b44d-4710-8808-19ff8e8ca430" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3e9b97cc-65ec-4d74-a974-70e06ceeaddd">
+          <propertyInstance Id="2731389f-5e3f-4f18-9f80-91aa25695099" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c5c94d87-c034-4576-b77c-714da6010f01" />
+          </propertyInstance>
+          <elementDefinition Id="a13c5959-68e0-400e-9b5b-39620e7d2427" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b0700291-ad9f-40c6-a63d-462a25b0e810">
+          <propertyInstance Id="8aa6825e-acbb-4d3f-9ee9-3d3695031cbe" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="3ed04bce-7467-4c4d-840d-250a9808c957" />
+          </propertyInstance>
+          <elementDefinition Id="2674a9f1-ad79-42eb-91a3-83cb06bd30ef" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="50709141-9c5f-4ba3-aa6e-8859e948542d">
+          <propertyInstance Id="97ce24b9-49ee-45e7-9f87-bf1bca0e89ad" name="Parameters">
+            <elementDefinition Id="26ed2e63-5a07-4c7f-bb11-4608d00160af" />
+          </propertyInstance>
+          <elementDefinition Id="db41d180-9e81-4a7c-b13b-21663dd5f6a4" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c2ba458d-6a17-4833-b116-b9867ce0c51e">
+      <profileInstance Id="b6f49d94-bd84-4121-a4b8-3aa76cd3cd0b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="15116461-fdf5-472a-a41b-ae0fd2098b2e">
+      <profileInstance Id="21b3c922-0115-4a0f-a397-f682cd6fc0ba" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5834310e-e942-4bb8-8c98-dcd30b7a54f6">
+      <profileInstance Id="f7fcc08d-ea44-4fff-b289-953c263b2c8b" name="CSharpProfile">
+        <elementDefinition Id="0410f050-aef2-4266-ad83-c3b287c24b8a" />
+      </profileInstance>
+      <elementDefinition Id="1339c489-2fe4-4a8f-b4fd-e91dc63fbf34" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a2af3c55-9df0-48cb-8513-77cde3085a00">
+      <profileInstance Id="82d02077-5165-4468-977d-d2d8477950ed" name="TextTemplateBindings">
+        <elementDefinition Id="d9f6529a-80a4-4ab2-ada1-2abb629a0a10" />
+      </profileInstance>
+      <elementDefinition Id="116c842e-ef55-40ad-8167-88f7bf569270" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b41d43fb-75b9-4964-8096-ab68a19941b2" name="GerarSenhaTemporaria" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="051e6825-e6b1-4863-bbcd-9c14228eb874" />
+        <nodes>
+          <opaqueAction Id="5f3657de-13a0-4a22-9cc5-9cdee5d929a0" name="Gerar nova senha temporária" isLeaf="false">
+            <elementDefinition Id="1a65becc-5e79-47ab-af9f-868e62c92339" />
+            <flowNodeTargets>
+              <controlFlow Id="4766e966-08ba-477b-930c-8d2af58a7285" isLeaf="false">
+                <opaqueActionMoniker Id="4f8fd6c3-cf1d-43e4-9eca-9b450a31dd44" LastKnownName="Enviar senha temporária" />
+                <elementDefinition Id="e0cbcfdc-c04b-4418-b81b-10f4db5ba7a1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4f8fd6c3-cf1d-43e4-9eca-9b450a31dd44" name="Enviar senha temporária" isLeaf="false">
+            <elementDefinition Id="4fa7394e-620b-46e5-9e2d-ca330915d49d" />
+            <flowNodeTargets>
+              <controlFlow Id="67ea6c11-621e-4def-ad11-969ac30d48c2" isLeaf="false">
+                <opaqueActionMoniker Id="8a2b3ded-ef6f-4b88-9d07-b46da90094d8" LastKnownName="Informar envio de nova senha" />
+                <elementDefinition Id="8a3189b9-ab90-4f23-9289-244da4859e74" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8a2b3ded-ef6f-4b88-9d07-b46da90094d8" name="Informar envio de nova senha" isLeaf="false">
+            <elementDefinition Id="23a652cc-a1af-42c9-b13b-69205895de02" />
+            <flowNodeTargets>
+              <controlFlow Id="7cbaae37-b1b7-4a77-ba9f-d0b8a8405089" isLeaf="false">
+                <activityFinalNodeMoniker Id="a706ef6e-f5f8-4932-ba38-f0f81122cf09" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c7233002-3407-4ca0-9d76-017ef16b67ca" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="4c16e757-2a07-4dd1-b46d-05f580968bb3" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7f9e963f-de0e-4ae0-a736-d66608839236" />
+            <flowNodeTargets>
+              <controlFlow Id="014fefce-6950-47ee-9153-f6cc44a7ac64" isLeaf="false">
+                <opaqueActionMoniker Id="5f3657de-13a0-4a22-9cc5-9cdee5d929a0" LastKnownName="Gerar nova senha temporária" />
+                <elementDefinition Id="dc0dfcf5-af71-48ae-aca3-29bb37b866dd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="a706ef6e-f5f8-4932-ba38-f0f81122cf09" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="f8ee1c8c-4eb4-4292-9513-b05951d92281" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="eb8a9cbc-41b8-4b17-bcf4-38680be3b919" name="ControleAcesso.Modelagem">
+    <elementDefinition Id="aba2b6c5-2376-4bd2-b278-f4c9f0211d26" />
+  </package>
+</activityRootModel>

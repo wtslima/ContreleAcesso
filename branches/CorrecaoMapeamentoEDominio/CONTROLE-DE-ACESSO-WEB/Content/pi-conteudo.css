@@ -1,0 +1,412 @@
+/* Using a Bootstrap glyphicon as bullet point
+ * FONTE: http://stackoverflow.com/questions/31196980/using-a-glyphicon-as-an-li-bullet-point-bootstrap-3
+ *
+ * A classe .glyphicon-styled não deve ser utilizada com outras classes, a não ser .glyphicon-bullet
+ * Em UL que utilizem outras classes (Ex .list-group), utilizar apenas .glyphicon-bullet e nos LI as classes dos respectivos ícones  
+ */
+ul.glyphicon-styled{
+  margin-left: -16px;
+}
+ul.glyphicon-styled>li{
+  display: block;
+}
+ul.glyphicon-styled>li:before {
+	margin-left: -22px;
+}
+ul.glyphicon-bullet>li:before {
+  font-family: 'Glyphicons Halflings';
+  font-size: 14px;
+  float: left;
+	margin-right:6px;
+	width: 16px;
+}
+li.bullet-file:before {
+	content: "\e022";
+}
+li.bullet-question-sign:before {
+	content: "\e085";
+}
+li.bullet-pencil:before {
+	content: "\270f";
+}
+li.bullet-globe:before {
+	content: "\e135";
+}
+li.bullet-warning-sign:before {
+	content: "\e107";
+} 
+ 
+/* 
+ * Página de login
+ */
+ .login-header {
+	min-height:230px;
+}
+.login-header_nome {
+	font-size:63px;
+}
+@media (max-width: 400px) {
+  .login-header_nome {
+    font-size:53px;
+  }
+}
+
+
+
+/* 
+ * Classes globais 
+ */
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.ul-no-style {
+	list-style-type: none; 
+	padding-left:0; 
+	margin-bottom:0;
+}
+.ol-no-style {
+	padding-left:20px; 
+	margin-bottom:0;
+}
+.list-group-item-style-none {
+	list-style-type: none;
+}
+.dropdown-head {
+	float:left;
+	margin-right:0.5em;
+}
+.text-decoration-underline {
+	text-decoration: underline;
+}
+/*h3 a.btn-block {
+	text-decoration:none;
+}*/
+.panel .panel-heading .panel-title span.glyphicon {
+	margin-right:10px;
+}
+dd {
+	margin-bottom:20px;
+}
+.margin-top-0px {
+	margin-top:0;
+}
+.margin-top-20px {
+	margin-top:20px;
+}
+.margin-top-10px {
+	margin-top:10px;
+}
+.margin-right-20px {
+	margin-right:20px;
+}
+.margin-bottom-20px {
+	margin-bottom:20px;
+}
+.display-inline-block {
+	display:inline-block;
+}
+@media (max-width: 400px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+/* tabelas */
+.vertical-align-top {
+	vertical-align:top !important;
+}
+/* Título da tabela */
+caption.lead {
+	border-bottom: 2px solid #ddd;
+  margin-bottom: 0;
+}
+.row-caption {
+	margin-right: -8px;
+  margin-left: -8px;
+}
+th .dropdown a,
+th .dropdown a:focus {
+  color: #333;
+	text-decoration: none;
+	white-space: nowrap;
+}
+th .dropdown a:hover,
+th .dropdown a:active {
+  color: #337ab7;
+  text-decoration: none;
+}
+caption>h2, td>h2, th>h2, td>h3, th>h3 {
+	margin: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+caption small {
+	font-size: 60%;
+	margin-top: 9px;
+}
+
+
+
+
+/*
+ * Painel + tabelas 
+ */
+/*
+ * regra1: inclui borda inferior em .panel-body para separar o corpo do painel e a tabela
+ */
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-bottom: 1px solid #ddd;
+}
+/*
+ * regra2: exclui a margem inferior entre a tabela e o div.table-responsive
+ */
+.table-responsive>table.table {
+	margin-bottom:0;
+}
+/*
+ * regra3: em resoluções xs, exclui a margem inferior entre a tabela e o div.table-responsive
+ * e acrescenta um padding-bottom para acomodar a barra de rolagem horizontral
+ */
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+}
+
+
+/*
+ * Cabeçalho (th) e células (td) centralizados verticalmente
+ * Utilizar as classes .table-valign-middle e .valign-middle para melhorar o alinhamento vertical
+ * em tabelas cujo conteúdo dos cabeçalhos e células quebram linha
+ */
+table.table-valign-middle>thead>tr>th {
+	vertical-align:middle;
+}
+table.table-valign-middle>tbody>tr>td {
+	vertical-align:baseline;
+}
+/*
+ * Utilizar a classe .valign-middle em células que contenham exclusivamente checkboxes e botões de ação
+ */
+table.table-valign-middle>tbody>tr>td.valign-middle {
+	vertical-align:middle;
+}
+
+
+
+
+table .nav-pills li {
+	margin-left:6px;
+}
+/* para usar com nav-pills */
+.table>thead>tr>td.td-nav {
+	padding: 3px 0;
+	border-bottom: 2px solid #ddd;
+}
+.table>thead>tr>td.td-nav>.td-nav-group {
+	padding: 3px 8px;
+	display: inline-block;
+}
+.dropdown-table-head {
+	float:left;
+	margin-right:0.2em;
+}
+.label-status {
+  font-size: 94%;
+}
+/* formularios */
+legend a {
+	text-decoration:none;
+}
+/*
+ * Customização da classe .form-inline e sub-classes
+ * Previsão de uso de h3 para nomear o formulário, com margem inferior, caso o formulário quebre
+ * Caso o formulário quebre, o h3 deve ficar acima dos campos. Para isso, todos os campos devem ser envolvidos com um div.form-group
+ */
+.form-inline h3.form-group {
+  margin-top:0;
+	margin-bottom:10px;
+	vertical-align:baseline;
+}
+.form-inline .form-group {
+	margin-right:20px;
+}
+/*
+ * A classe .ideal-search-box deve ser utilizada para atribuir a largura ideal a campos de busca
+ * Segundo pesquisas, esta largura é de 27 caracteres
+ * http://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/
+ * A classe .ideal-search-box está atrelada a uma media query para não sobrescrever os estilos da classe .form-inline
+ */
+@media (min-width: 768px) {
+	.ideal-search-box {
+		width:27em !important;
+	}
+}
+
+.nested-fieldset {
+  border: 0 !important; 
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (max-width: 399px) {
+	.table>thead>tr>td.td-nav>form.td-nav-group {
+		display: block;
+	}
+}
+@media (min-width: 400px) {
+	.td-nav>.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .td-nav>.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+	.td-nav>.form-inline .form-control-static {
+    display: inline-block;
+  }
+  .td-nav>.form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .td-nav>.form-inline .input-group .input-group-addon,
+  .td-nav>.form-inline .input-group .input-group-btn,
+  .td-nav>.form-inline .input-group .form-control {
+    width: auto;
+  }
+  .td-nav>.form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .td-nav>.form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .td-nav>.form-inline .radio,
+  .td-nav>.form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .td-nav>.form-inline .radio label,
+  .td-nav>.form-inline .checkbox label {
+    padding-left: 0;
+  }
+  .td-nav>.form-inline .radio input[type="radio"],
+  .td-nav>.form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .td-nav>.form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+/* Fim formulários */
+/* Banners */
+.banner-faq-registro {
+	background-image:url(../img/banner_faq_fundo.png);
+}
+.banner-registro-glyphicon {
+	font-size:3.5em;
+}
+.banner-registro-texto {
+	font-size:1.5em;
+}
+@media (max-width: 767px) {
+  .banner-registro {
+		padding: 0 15px;
+		font-weight:bold;
+	}
+	.banner-registro-glyphicon {
+		font-size:2.75em;
+	}
+	.banner-registro-texto {
+		font-size:1.55em;
+	}
+}
+@media (max-width: 707px) {
+	.banner-registro-glyphicon {
+		font-size:2em;
+	}
+}
+@media (max-width: 460px) {
+	.banner-registro {
+		padding: 3px 15px;
+	}
+	.banner-registro-glyphicon {
+		font-size:1.55em;
+	}
+	.banner-registro-texto {
+		font-size:1.35em;
+	}
+}
+@media (min-width: 992px) {
+  .banner-registro {
+	height:73px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-registro {
+	height:92px;
+  }
+}
+/* FIM BANNERS */
+/* 
+Alinhamento vertical de colunas
+Copyright © 2013 - 2015 Riccardo Caroli 
+*/
+
+/* columns of same height styles */
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+/* vertical alignment styles */
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}

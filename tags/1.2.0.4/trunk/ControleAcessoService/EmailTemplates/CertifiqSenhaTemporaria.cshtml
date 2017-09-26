@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>[Certifiq] Nova senha</title>
+<meta charset="utf-8">
+</head>
+<body marginheight="0" marginwidth="0" bgcolor="#ffffff" style="background-color:#ffffff; margin:0; padding:0;">
+	
+    <!-- Se não estiver visualizando... -->
+    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+            <td align="center" bgcolor="#094a6a">
+               <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF;">
+                    E-mail de recuperação de senha
+                </span>
+            </td>
+        </tr>
+    </table>
+    
+    <!--logo-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td align="center" style="border-bottom: 4px solid #094a6a">
+                <img src="http://controleacesso-d/EmailTemplates/Images/logo-certifiq.png" />
+            </td>
+        </tr>
+    </table>
+    
+    <!--texto-->
+    <table width="100%" border="0" cellpadding="30" cellspacing="0" bgcolor="#EBEBEB">
+		<tr>
+        	<td style="font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:20px;">
+            Você está recebendo esta mensagem porque nos informou que esqueceu sua senha de acesso ao aplicativo móvel
+            "Certifiq - Sistema de Empresas Certificadas", desenvolvido pelo Inmetro.<br /><br />
+            Se você não solicitou o envio de uma nova senha, desconsidere esta mensagem.<br /><br />
+            Se realmente esqueceu sua senha, utilize a senha abaixo para entrar no Certifiq e definir uma nova senha.<br /><br />
+            <span style="font-weight:bold;">Senha provisória: <span style="font-size:17px; color:#143d51;">@Model.Senha</span></span>
+            <br /><br />
+            <span style="font-weight:bold;">Esta senha expirará em <span style="font-size:17px; color:#143d51;">@Model.Prazo dias.</span></span>
+            <br /><br />
+    		</td>
+        </tr>
+    </table>
+	
+    <!--assinatura-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#ffffff">	
+        <tr>
+    		<td style="text-align:center; border-bottom:1px solid #CCC;">
+            	<img src="http://controleacesso-d/EmailTemplates/Images/logo-inmetro-footer.png" />
+            </td>
+    	</tr>
+	</table>
+    
+</body>
+</html>

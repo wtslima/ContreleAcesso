@@ -1,0 +1,2 @@
+D:\sistemas\InmetroRepositorio\ControleAcesso\trunk\WebApplication\obj\Debug\ControleAcesso.Web.UI.csprojResolveAssemblyReference.cache
+D:\sistemas\InmetroRepositorio\ControleAcesso\trunk\WebApplication\obj\Debug\ControleAcesso.Web.UI.csproj.CoreCompileInputs.cache

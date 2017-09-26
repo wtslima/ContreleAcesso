@@ -1,0 +1,11 @@
+﻿<label>{{label}}</label>
+<input type="text" class="form-control" placeholder="Nome da localidade" ng-blur="setSelectedItem(selectedIndex)"
+       ng-model="searchText" ng-change="search()" ng-keydown="checkKeyDown($event)" size="35">
+<nav>
+    <ul id="suggestions" class="suggestions-list" ng-if="suggestions.length > 0" ng-style="suggestionsStyle()">
+        <li ng-repeat="suggestion in suggestions" class="blockSpan" id="suggestion{{label}}{{$index}}"
+            ng-click="setSelectedItem($index)"
+            ng-mouseover="$parent.selectedIndex=$index"
+            ng-class="{active : $parent.selectedIndex===$index}">{{suggestion.Nome}}</li>
+    </ul>
+</nav>

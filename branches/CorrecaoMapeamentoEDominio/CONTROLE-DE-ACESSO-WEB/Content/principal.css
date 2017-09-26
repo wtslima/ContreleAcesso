@@ -1,0 +1,222 @@
+﻿/**
+* Principal
+*
+*/
+body {
+    padding-top: 0;
+}
+
+a {
+    color: #457776;
+}
+
+/* custom styles for the typeahead */
+.tt-dropdown-menu {
+    text-align: left;
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+    width: 396px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.typeahead {
+    background-color: #fff;
+}
+
+    .typeahead:focus {
+        border: 2px solid #0097cf;
+    }
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-dropdown-menu {
+    width: 422px;
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+    .tt-suggestion.tt-is-under-cursor {
+        color: #fff;
+        background-color: #0097cf;
+    }
+
+    .tt-suggestion p {
+        margin: 0;
+    }
+
+/* rodape */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #d0d0d0;
+}
+
+    .footer > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footer .container .informacoes {
+        margin-top: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+
+        .footer .container .informacoes .setor-logo-inmetro {
+            text-align: center;
+            padding: 10px;
+        }
+
+            .footer .container .informacoes .setor-logo-inmetro #logo-inmetro {
+                display: inline-block;
+            }
+
+        .footer .container .informacoes .setor-infor-creditos {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+/* cabecalho */
+.barra-menu-principal {
+}
+
+.linha-divisoria {
+    height: 10px;
+    background-color: #76c1b2;
+}
+
+
+/* login */
+
+.area-login {
+}
+
+.painel-login {
+    background-color: #f8f8f8;
+}
+
+/* conteudo */
+.conteudo {
+    min-height: 400px;
+    margin-bottom: 40px;
+}
+
+.conteudo-login {
+    min-height: 450px;
+    margin-bottom: 40px;
+}
+
+.container .titulo {
+    color: #447675;
+    margin-bottom: -12px;
+    font-size: 28px;
+}
+
+
+
+/* tabelas */
+.container .table {
+    font-size: 13px;
+}
+
+    /*.container .table th {
+        font-size: 13px;
+        background-color: #447675;
+        color: #FFFFFF;
+    }*/
+
+    .container .table td {
+        font-size:13px;
+    }
+
+
+/* form */
+/*.form-control:focus {
+    border-color: #76c1b2;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(118, 193, 178, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(118, 193, 178, .6);
+}
+
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999;
+}
+
+.form-group {
+    margin-bottom: 0;!important;
+}
+
+    .form-group .campo-form {
+        margin-bottom: 12px;
+    }*/
+
+
+.carregando {
+    padding: 20px 0;
+    color:#ccc;
+}
+
+.conteudo form label {
+    font-weight: normal;
+}
+
+.conteudo form input {
+    font-weight: normal;
+}
+
+
+.tab-content .tab-pane {
+    padding: 36px 0;
+}
+
+
+/*.container .row .foto {
+    text-align: right;
+}*/

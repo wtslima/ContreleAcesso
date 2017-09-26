@@ -1,0 +1,85 @@
+@using Microsoft.AspNet.Identity
+@helper Barra()
+{
+	var url = new System.Web.Mvc.UrlHelper(Context.Request.RequestContext);
+    <!-- BARRA.SISTEMAS -->
+	<!-- solução baseada em: http://getbootstrap.com/examples/navbar-static-top -->
+	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+      		<span class="navbar-brand">
+				<img src="~/Content/Images/logotipo.png" alt="Inmetro" width="117" height="24">
+			</span>
+			@if (Request.IsAuthenticated)
+			{
+			<div class="dropdown">
+				<a href="#" class="dropdown-toggle navbar-system-brand-logo navbar-system-brand-semlogo" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<h1>
+						<span class="navbar-system-brand-nome">Controle de Acesso</span>
+						<span class="caret"></span>
+					</h1>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="@url.Action("Index", "Home")">Sobre o sistema</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</div>
+			}			
+        </div>
+		
+		@if (Request.IsAuthenticated)
+		{
+		<!-- MENU -->
+		<!-- a classe .active deve ser dinamicamente atribuída ao <li> ativo -->
+        <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-nav--2linhas">
+				<!-- nome usuario -->
+				<li class="dropdown">
+  					<a href="#" class="dropdown-toggle navbar-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<strong>@User.Identity.Name</strong> <span class="caret"></span>
+					</a>
+  					<ul class="dropdown-menu">
+						<li class="dropdown-header">Perfil</li>
+						<!--<li><a href="#">Consulta</a></li>
+						<li><a href="#">Administração</a></li>
+
+						<li role="separator" class="divider"></li>-->
+		                <li><a href="#">Configurações pessoais</a></li>
+		                <li><a href="#">Alterar senha</a></li>
+						<li><a href="@url.Action("Logout", "Account")">Sair</a></li>
+					</ul>
+        		</li>
+			</ul>
+			
+			<!-- secoes do sistema -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">Sistemas</a></li>
+				<li><a href="#">Usuários</a></li>
+	        </ul>	
+        </div><!--/.navbar-collapse -->
+        }
+      </div><!--/.navbar.container -->
+    </nav><!--/.BARRA.SISTEMAS -->
+}
+
+@helper Footer()
+{
+    <!-- RODAPE.SISTEMAS -->
+    <footer id="footer-sistemas" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <!-- alterar apenas numero da versao e data de lancamento da versao -->
+                    Acesso Versão @Request.RequestContext.HttpContext.Application["VersionNumber"].ToString()
+                   
+                    <!-- a data é opcional -->
+                    - @Request.RequestContext.HttpContext.Application["VersionDate"]
+                </div>
+                <div class="col-xs-6">
+                    <!-- alterar apenas ano de lançamento da aplicação e ano corrente -->
+                    © Copyright 2015-@DateTime.Now.Year Inmetro.
+                </div>
+            </div>
+        </div>
+    </footer><!--/RODAPE.SISTEMAS -->
+}

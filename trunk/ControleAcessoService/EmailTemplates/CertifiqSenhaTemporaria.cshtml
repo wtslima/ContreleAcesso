@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>[Certifiq] Nova senha</title>
+<meta charset="utf-8">
+</head>
+<body marginheight="0" marginwidth="0" bgcolor="#ffffff" style="background-color:#ffffff; margin:0; padding:0;">
+	
+    <!-- Se não estiver visualizando... -->
+    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+            <td align="center" bgcolor="#094a6a">
+               <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF;">
+                    Certifiq – Solicitação de senha de acesso
+                </span>
+            </td>
+        </tr>
+    </table>
+    
+    <!--logo-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td align="center" style="border-bottom: 4px solid #094a6a">
+                <img src="http://imagens.inmetro.gov.br/ControleAcesso/imagens/email/logo-certifiq.png" />
+            </td>
+        </tr>
+    </table>
+    
+    <!--texto-->
+    <table width="100%" border="0" cellpadding="30" cellspacing="0" bgcolor="#EBEBEB">
+		<tr>
+        	<td style="font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:20px;">
+				Prezado,<br />
+				Você está recebendo esta mensagem porque nos informou que esqueceu sua senha de acesso ao Certifiq - Sistema de gerenciamento de certificados.<br />
+				Se você não solicitou o envio de uma nova senha, desconsidere esta mensagem.<br />
+				Se realmente esqueceu sua senha, utilize a identificação do usuário abaixo e defina uma nova senha.<br /><br />
+				<span style="font-weight:bold;">Login: <span style="font-size:17px; color:#143d51;">@Model.Login</span></span><br />
+				<span style="font-weight:bold;">Senha provisória: <span style="font-size:17px; color:#143d51;">@Model.Senha</span></span><br /><br />
+				<span style="font-weight:bold;">Esta senha expirará em <span style="font-size:17px; color:#143d51;">@Model.Prazo dias.</span></span>
+				<br /><br />
+				<i>Atente para a diferença entre caracteres minúsculos e maiúsculos da senha.</i>
+				<br /><br />
+				Instituto Nacional de Metrologia, Qualidade e Tecnologia (Inmetro)<br />
+				<a href="http://www.inmetro.gov.br">www.inmetro.com.br</a>
+    		</td>
+        </tr>
+    </table>
+	
+    <!--assinatura-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#ffffff">	
+        <tr>
+    		<td style="text-align:center; border-bottom:1px solid #CCC;">
+            	<img src="http://imagens.inmetro.gov.br/ControleAcesso/imagens/email/logo-inmetro-footer.png" />
+            </td>
+    	</tr>
+	</table>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<publishData>
+  <publishTarget publishUrl="D:\ControleAcesso\">
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.pdb" publishTime="11/05/2014 12:04:43" />
+    <file relUrl="bin/ControleAcesso.Dominio.dll" publishTime="11/05/2014 12:07:05" />
+    <file relUrl="bin/Corporativo.xml" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="Global.asax" publishTime="11/03/2014 17:19:22" />
+    <file relUrl="bin/Corporativo.Utils.dll" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/log4net.xml" publishTime="11/03/2014 17:21:16" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.dll" publishTime="11/05/2014 12:07:06" />
+    <file relUrl="bin/log4net.dll" publishTime="11/03/2014 17:21:16" />
+    <file relUrl="web.Release.config" publishTime="11/03/2014 17:19:22" />
+    <file relUrl="bin/ControleAcesso.Dominio.pdb" publishTime="11/05/2014 12:04:40" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/FluentNHibernate.xml" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/ControleAcessoService.dll" publishTime="11/05/2014 12:15:25" />
+    <file relUrl="bin/Xipton.Razor.dll" publishTime="11/03/2014 17:21:17" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.pdb" publishTime="11/05/2014 12:04:44" />
+    <file relUrl="ControleAcessoService.AutenticacaoServico.svc" publishTime="11/05/2014 12:15:25" />
+    <file relUrl="bin/System.Data.SQLite.Linq.dll" publishTime="11/03/2014 17:21:18" />
+    <file relUrl="EmailTemplates/ServirSenhaTemporaria.cshtml" publishTime="11/03/2014 17:19:22" />
+    <file relUrl="bin/AutoMapper.xml" publishTime="11/03/2014 17:21:17" />
+    <file relUrl="bin/AutoMapper.dll" publishTime="11/03/2014 17:21:17" />
+    <file relUrl="AutenticacaoServico.svc" publishTime="11/05/2014 12:15:17" />
+    <file relUrl="App_Data/Log.sql" publishTime="11/03/2014 17:19:23" />
+    <file relUrl="bin/ControleAcessoService.dll.config" publishTime="11/04/2014 16:59:43" />
+    <file relUrl="bin/Corporativo.dll" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.dll" publishTime="11/05/2014 12:07:07" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="11/03/2014 17:21:17" />
+    <file relUrl="web.config" publishTime="11/04/2014 16:59:43" />
+    <file relUrl="web.Debug.config" publishTime="11/03/2014 17:19:22" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/NHibernate.xml" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/ControleAcessoService.pdb" publishTime="11/05/2014 12:06:51" />
+    <file relUrl="bin/NHibernate.dll" publishTime="11/03/2014 17:21:13" />
+    <file relUrl="bin/System.Data.SQLite.dll" publishTime="11/03/2014 17:21:18" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\ControleAcesso\">
+    <file relUrl="bin/ControleAcesso.Dominio.pdb" publishTime="10/10/2013 12:01:51" />
+    <file relUrl="bin/AutoMapper.xml" publishTime="10/09/2013 12:08:59" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.pdb" publishTime="10/10/2013 12:01:57" />
+    <file relUrl="bin/Corporativo.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/Corporativo.Utils.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcessoService.dll" publishTime="10/10/2013 12:02:00" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.dll" publishTime="10/10/2013 12:01:56" />
+    <file relUrl="bin/ControleAcesso.Dominio.dll" publishTime="10/10/2013 12:01:51" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/log4net.dll" publishTime="10/09/2013 12:08:53" />
+    <file relUrl="bin/log4net.xml" publishTime="10/09/2013 12:08:53" />
+    <file relUrl="bin/System.Data.SQLite.dll" publishTime="10/09/2013 12:09:00" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcessoService.pdb" publishTime="10/10/2013 12:02:00" />
+    <file relUrl="bin/AutoMapper.dll" publishTime="10/09/2013 12:08:59" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/NHibernate.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.pdb" publishTime="10/10/2013 12:01:56" />
+    <file relUrl="bin/System.Data.SQLite.Linq.dll" publishTime="10/09/2013 12:09:00" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.dll" publishTime="10/10/2013 12:01:57" />
+    <file relUrl="bin/NHibernate.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/Corporativo.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/FluentNHibernate.xml" publishTime="10/09/2013 12:08:40" />
+  </publishTarget>
+</publishData>

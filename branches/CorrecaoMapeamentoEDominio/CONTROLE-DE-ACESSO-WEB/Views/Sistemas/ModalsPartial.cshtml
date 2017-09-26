@@ -1,0 +1,244 @@
+﻿<!-- modals - cadastro de sistemas -->
+<!-- modal 1 -->
+<div id="modal-cadastro-sistema" class="modal fade" aria-hidden="false">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Cadastro de sistema</h4>
+        </div>
+        <div class="modal-body">
+            <!-- display controle exibicao ajax -->
+            <div id="display-load" class="row" style="display: none;">
+                <div class="col-md-12">
+                    <div id="ajax-load" class="carregando text-center"><img src="~/Content/Images/carregando.gif" /><br />Processando...</div>
+                </div>
+            </div>
+            <div id="display-error" class="row" style="display: none;">
+                <div class="col-md-12">
+                    <div class="alert alert-danger" role="alert"><p></p></div>
+                </div>
+            </div>
+            <div id="display-sucesso" class="row" style="display: none;">
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert"><p></p></div>
+                </div>
+            </div>
+            <!-- /display controle exibicao ajax -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnModalCorrigir">Corrigir</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnModalFinalizar">Finalizar</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /.modal 1 -->
+
+<!-- modal 3 -->
+<div id="modal-duvida" class="modal fade" aria-hidden="false">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+            <div id="display-mensagem" class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-info" role="alert"><p></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /.modal 3 -->
+<!-- modal 4 -->
+<div id="modal-cadastro-sistema-p1" class="modal fade" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Cadastro de Sistema</h4>
+            </div>
+            <div class="modal-body">
+                <!-- display controle exibicao ajax -->
+                <div id="display-load-sistema" class="row" style="display:none;">
+                    <div class="col-md-12">
+                        <div id="ajax-load" class="carregando text-center"><img src="~/Content/Images/carregando.gif" /><br />Processando...</div>
+                    </div>
+                </div>
+                <div id="display-error-sistema" class="row" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger" role="alert"><p></p></div>
+                    </div>
+                </div>
+                <div id="display-sucesso" class="row" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="alert alert-success" role="alert"><p></p></div>
+                    </div>
+                </div>
+                <!-- /display controle exibicao ajax -->
+                <!-- formulario -->
+                <div id="formulario" class="row">
+                    <div class="col-md-12">
+                        <form onsubmit=" return false " role="form">
+                            <div class="form-group">
+                                <input type="hidden" name="Id" id="Id" value="" />
+                                @Html.Label("* Sigla do Sistema")
+                                @Html.TextBox("ModalCodSistema", "", new { @class = "form-control", id = "ModalCodSistema", size = 8 })
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("* Descrição do Sistema")
+                                @Html.TextBox("ModalDescSistema", "", new {@class = "form-control", id = "ModalDescSistema", size = 30})
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /formulario -->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnModalDesistir">Desistir</button>
+                <button type="button" class="btn btn-success" id="btnModalCadastrar">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modal 4 -->
+<!-- modal 2 -->
+<div id="modal-cadastro-sistema-p2" class="modal fade" aria-hidden="false">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Cadastro de sistema</h4>
+        </div>
+        <div class="modal-body">
+            <div id="display-sucesso" class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-warning" role="alert"><p>Tem certeza que deseja cadastrar esse sistema?</p></div>
+                </div>
+            </div>
+            <div id="dados-sistema"></div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnModalCancelar">Cancelar</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal" id="btnConfirmarCadastroSistema">Cadastrar</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /.modal 2 -->
+<!-- modal 5 -->
+<div id="modal-cadastro-sistema-p3" class="modal fade" aria-hidden="false">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+            <div id="display-sucesso" class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert"><p>O Sistema foi cadastrado com sucesso!</p></div>
+                </div>
+            </div>
+            <div id="dados-sistema"></div>
+        </div>
+        <div id="display-error" class="row" style="display: none;">
+            <div class="col-md-12">
+                <div class="alert alert-danger" role="alert"><p></p></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /.modal 5 -->
+<!-- modal 6 -->
+<div id="modal-editar-sistema-p1" class="modal fade" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Cadastro de Sistema</h4>
+            </div>
+            <div class="modal-body">
+                <!-- display controle exibicao ajax -->
+                <div id="display-load-editar" class="row" style="display:none;">
+                    <div class="col-md-12">
+                        <div id="ajax-load" class="carregando text-center"><img src="~/Content/Images/carregando.gif" /><br />Processando...</div>
+                    </div>
+                </div>
+                <div id="display-error-editar" class="row" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="alert alert-danger" role="alert"><p></p></div>
+                    </div>
+                </div>
+                <div id="display-sucesso-editar" class="row" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="alert alert-success" role="alert"><p></p></div>
+                    </div>
+                </div>
+                <!-- /display controle exibicao ajax -->
+                <!-- formulario -->
+                <div id="formulario" class="row">
+                    <div class="col-md-12">
+                        <form onsubmit=" return false " role="form">
+                            <div class="form-group">
+                                <input type="hidden" name="Id" id="Id" value=""/>
+                                <input type="hidden" name="pesqInicial" id="pesqInicial" value="@TempData.ToArray().FirstOrDefault().Value" />
+                                @Html.Label("* Sigla do Sistema")
+                                @Html.TextBox("ModalEdtCodSistema", "", new { @class = "form-control", id = "ModalEdtCodSistema", size = 8 })
+                            </div>
+                            <div class="form-group">
+                                @Html.Label("* Descrição do Sistema")
+                                @Html.TextBox("ModalEdtDescSistema", "", new { @class = "form-control", id = "ModalEdtDescSistema", size = 30 })
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /formulario -->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnEdtModalDesistir">Desistir</button>
+                <button type="button" class="btn btn-success" id="btnModalEditar">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modal 6 -->
+<!-- modal 7 -->
+<div id="modal-editar-sistema-p2" class="modal fade" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <div id="display-sucesso" class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-success" role="alert"><p>O Sistema foi alterado com sucesso!</p></div>
+                    </div>
+                </div>
+                <div id="dados-sistema"></div>
+            </div>
+            <div id="display-error" class="row" style="display: none;">
+                <div class="col-md-12">
+                    <div class="alert alert-danger" role="alert"><p></p></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modal 7 -->
+
+<!-- /modals -->

@@ -1,0 +1,49 @@
+<publishData>
+  <publishTarget publishUrl="C:\published\ControleAcesso\">
+    <file relUrl="bin/Inmetro.Utils.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.pdb" publishTime="09/25/2017 15:06:49" />
+    <file relUrl="EmailTemplates/CertifiqCadastro.cshtml" publishTime="07/27/2017 17:13:12" />
+    <file relUrl="bin/ControleAcesso.Dominio.dll" publishTime="09/25/2017 13:26:31" />
+    <file relUrl="bin/Corporativo.xml" publishTime="07/28/2017 14:43:18" />
+    <file relUrl="Global.asax" publishTime="07/27/2017 17:13:12" />
+    <file relUrl="bin/Corporativo.Utils.dll" publishTime="07/28/2017 14:43:18" />
+    <file relUrl="bin/log4net.xml" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.dll" publishTime="09/25/2017 15:06:49" />
+    <file relUrl="bin/log4net.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="web.Release.config" publishTime="07/27/2017 17:13:11" />
+    <file relUrl="bin/ControleAcesso.Dominio.pdb" publishTime="09/25/2017 13:26:31" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="07/28/2017 14:43:18" />
+    <file relUrl="EmailTemplates/CertifiqSenhaTemporaria.cshtml" publishTime="07/27/2017 17:13:11" />
+    <file relUrl="bin/FluentNHibernate.xml" publishTime="07/28/2017 14:43:19" />
+    <file relUrl="bin/System.Net.Http.Formatting.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="x86/SQLite.Interop.dll" publishTime="08/24/2017 11:09:50" />
+    <file relUrl="bin/Xipton.Razor.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="x64/SQLite.Interop.dll" publishTime="08/24/2017 11:09:32" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.pdb" publishTime="09/25/2017 15:06:49" />
+    <file relUrl="bin/Corporativo.SDK.xml" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="ControleAcessoService.AutenticacaoServico.svc" publishTime="09/25/2017 15:58:42" />
+    <file relUrl="bin/System.Data.SQLite.Linq.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="EmailTemplates/ServirSenhaTemporaria.cshtml" publishTime="07/27/2017 17:13:12" />
+    <file relUrl="bin/AutoMapper.xml" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/AutoMapper.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="AutenticacaoServico.svc" publishTime="07/27/2017 17:13:11" />
+    <file relUrl="App_Data/Log.sql" publishTime="07/27/2017 17:13:11" />
+    <file relUrl="bin/ControleAcessoService.dll.config" publishTime="09/25/2017 11:02:49" />
+    <file relUrl="bin/Corporativo.dll" publishTime="07/28/2017 14:43:18" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.dll" publishTime="09/25/2017 15:06:49" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="07/28/2017 14:43:18" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="web.config" publishTime="09/25/2017 11:02:49" />
+    <file relUrl="web.Debug.config" publishTime="08/24/2017 14:48:04" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="07/28/2017 14:43:19" />
+    <file relUrl="bin/System.Net.Http.Formatting.xml" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/System.Data.SQLite.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/NHibernate.xml" publishTime="07/28/2017 14:43:19" />
+    <file relUrl="bin/ControleAcessoService.pdb" publishTime="09/25/2017 15:58:41" />
+    <file relUrl="bin/NHibernate.dll" publishTime="07/28/2017 14:43:19" />
+    <file relUrl="bin/Corporativo.SDK.dll" publishTime="07/28/2017 14:43:20" />
+    <file relUrl="bin/ControleAcessoService.dll" publishTime="09/25/2017 15:58:41" />
+  </publishTarget>
+</publishData>

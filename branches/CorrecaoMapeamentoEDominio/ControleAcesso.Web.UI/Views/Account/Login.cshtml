@@ -1,0 +1,116 @@
+@using System.Web;
+@model ControleAcesso.Web.UI.Models.LoginViewModel
+@{
+	ViewBag.Title = "Login";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="login-header col-xs-12 col-sm-6 col-sm-offset-1 vcenter">
+	<h1>
+		<!-- Quando o sistema NÃO tiver logotipo, utilize a linha abaixo -->
+		 <span class="login-header_nome">Controle de Acesso</span><br>
+		<!-- Quando o sistema tiver logotipo, utilize a linha abaixo (width máxima: 530px) -->
+		<!-- <img src="img/logotipo-siadi-login.png" class="img-responsive" alt="" height="110" width="325"> -->
+		<small>Controle de Acesso Inmetro</small>
+	</h1>
+	<p><small>Versão @Request.RequestContext.HttpContext.Application["VersionNumber"].ToString()</small></p>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-sm-4 vcenter">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h2 class="panel-title">
+				<strong>Login</strong>
+			</h2>
+		</div>
+
+	    <div class="panel-body">
+	        @Html.ValidationSummary()
+	        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new {id = "loginForm", @class = "form-horizontal"}))
+	        {
+	            @Html.AntiForgeryToken()
+	            <div class="form-group">
+	                <label for="usuario" class="col-lg-5 control-label">Nome de usuário</label>
+	                <div class="col-lg-7">
+	                    @Html.TextBoxFor(x => x.Username, new {id = "usuario", name = "usuario", @class = "form-control input"})
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <label for="senha" class="col-lg-5 control-label">Senha</label>
+	                <div class="col-lg-7">
+	                    @Html.PasswordFor(x => x.Password, new {@class = "form-control input", id = "senha", name = "senha"})
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-lg-7 col-lg-offset-5">
+	                    @Html.HiddenFor(x => x.ReturnUrl)
+	                    <button class="btn btn-primary btn-lg btn-block" style="cursor: pointer" role="button" onClick=" document.forms[0].submit() " id="bt_entrar">Entrar</button>
+	                </div>
+	            </div>
+	        }
+	    </div>
+	</div>
+</div>
+</div>
+
+<!--<div class="row" ng-controller="LoginController">
+	<div class="col-xs-12 col-sm-5 col-sm-offset-1 margin-top-20px">
+		<div class="well">
+			<h3 class="margin-top-0px">Referência</h3>
+			<ul class="glyphicon-styled glyphicon-bullet">
+				<li class="bullet">
+					<a href="" ng-click="getHelp()">Documentação da API</a>
+				</li>
+				<li class="bullet">
+					<a href="" ng-click="getApiInfo()">Informações da API</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>-->
+
+<!--<script type="text/ng-template" id="apiHelp.html">
+	<div class="modal-header">
+        <h3 class="modal-title">Controle de Acesso API</h3>
+    </div>
+    <div class="modal-body">
+		<iframe src="../Content/Help/API/V2/index.html" border="0" width="100%" height="400px"></iframe>
+	</div>
+	<div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Fechar</button>
+    </div>
+</script>
+<script type="text/ng-template" id="apiInfo.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Controle de Acesso v{{info.Assembly.Version}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="gridContainer" style="padding: 5px;">
+            <div class="row grid-row">
+                <div class="col-sm-3"><strong>Data de construção</strong></div>
+                <div class="col-sm-9">{{info.Assembly.Date | date: 'dd/MM/yyyy'}}</div>
+            </div>
+            <div class="panel panel-default" style="margin-top: 7px;">
+                <div class="panel-heading">Padrões</div>
+                <div class="panel-body">
+                    <div class="row grid-row">
+                        <div class="col-sm-5"><strong>Registros por página padrão</strong></div>
+                        <div class="col-sm-7">{{info.API.RegistrosPorPaginaPadrao}}</div>
+                    </div>
+                    <div class="row grid-row">
+                        <div class="col-sm-5"><strong>Máximo de registros por página</strong></div>
+                        <div class="col-sm-6">{{info.API.MaximoRegistrosPorPagina}}</div>
+                    </div>
+                    <div class="row grid-row">
+                        <div class="col-sm-5"><strong>Máximo de registros por página em lote</strong></div>
+                        <div class="col-sm-7">{{info.API.MaximoRegistrosPorPaginaEmLote}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Fechar</button>
+    </div>
+</script>-->

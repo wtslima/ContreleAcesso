@@ -1,0 +1,2311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="aba2b6c5-2376-4bd2-b278-f4c9f0211d26"
+  name="ControleAcesso.Modelagem" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="28c412bf-143c-42a4-bd11-8b4ad83e8150">
+      <body>Senha temporária válida
+- A senha existe;
+- A senha não está expirada;
+- A senha é igual à informada.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="965754ba-a417-4a27-a150-1ee527677f84"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2e1c601d-4389-4fb4-8c67-cd61d2426c6a">
+          <propertyInstance
+            Id="1c1a6bc1-563c-41b8-b684-4fb61fc4bd74"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="49107930-e741-477d-913f-93a52271f592">
+          <propertyInstance
+            Id="10e9be00-b70f-44c4-9584-37c5a11ef2fa"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="d7274944-12b4-4d9c-b83e-3951eb6e46ba">
+          <propertyInstance
+            Id="d90e88b8-34aa-4f77-9069-770366529663"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="bf445d10-d0f5-41fb-aed9-d93c5bdcbf84"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="807694d1-8508-42a6-b9a1-2754e1ac13b5">
+          <propertyInstance
+            Id="875d74a1-c507-4b08-a496-4661114a613a"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8a5e5633-9517-4ea0-9a4d-8c2f23a8714b">
+          <propertyInstance
+            Id="115f355e-fa61-45fc-a1c0-52da182f12ef"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="e923708e-5a9d-4741-b5c7-20f6d6ab32a3">
+          <propertyInstance
+            Id="a8a9820f-e071-4745-bec0-c0a41df6b3a9"
+            name="ProjectPath"
+            value="ClassTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|EnumTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|InterfaceTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj|StructTemplate=..\ControleAcesso.ModelagemLib\ControleAcesso.ModelagemLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="1a01e588-b44d-4710-8808-19ff8e8ca430">
+          <propertyInstance
+            Id="9216b8ba-df35-4c7f-b25e-ee6b8ceba42f"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a13c5959-68e0-400e-9b5b-39620e7d2427">
+          <propertyInstance
+            Id="c5c94d87-c034-4576-b77c-714da6010f01"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2674a9f1-ad79-42eb-91a3-83cb06bd30ef">
+          <propertyInstance
+            Id="3ed04bce-7467-4c4d-840d-250a9808c957"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="db41d180-9e81-4a7c-b13b-21663dd5f6a4">
+          <propertyInstance
+            Id="26ed2e63-5a07-4c7f-bb11-4608d00160af"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="1339c489-2fe4-4a8f-b4fd-e91dc63fbf34">
+      <profileInstance
+        Id="0410f050-aef2-4266-ad83-c3b287c24b8a"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="116c842e-ef55-40ad-8167-88f7bf569270">
+      <profileInstance
+        Id="d9f6529a-80a4-4ab2-ada1-2abb629a0a10"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="48828ea1-0807-4c86-925e-f03d869e8caf"
+        name="UsuarioExterno"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c67698c0-e8b4-4ee4-a108-8bd9a9dae131"
+            name="TextTemplateBindings"
+            profile="TextTemplateBindings">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0bb01e8-0166-4fdd-973c-d84bf5e6c0d9">
+                <propertyInstance
+                  Id="8919b649-e5d1-4d46-8837-d36a94e036dd"
+                  name="Alias"
+                  value="Class" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d68da86a-2fd2-4387-a940-017a0f85b20f">
+                <propertyInstance
+                  Id="781caba8-a2bc-42db-b5dd-c23b894d357b"
+                  name="TemplateFilePath"
+                  value="Class=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3686bf61-33b1-422a-b657-3937c43c2c94">
+                <propertyInstance
+                  Id="7187f77a-4d9f-4559-b41c-d0dd1b558292"
+                  name="ProjectPath"
+                  value="Class=..\ControleAcesso.Dominio\ControleAcesso.Dominio.csproj" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4d2de88b-7289-43c0-b796-d636bd62a828">
+                <propertyInstance
+                  Id="1e805958-a250-4eae-ba66-218f68000000"
+                  name="TargetDirectory"
+                  value="Class=Entidades\{PackageStructure}" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68043626-298a-4a9f-8433-ca49d67bda10">
+                <propertyInstance
+                  Id="28cd1061-5afb-4735-a5de-15d56b96b6fc"
+                  name="TargetName"
+                  value="Class={Name}" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="567ff1d2-d4fd-4676-b6b5-06edd43df49a">
+                <propertyInstance
+                  Id="72c4b2b6-7bc9-48da-80e6-9c09c16c40bc"
+                  name="Overwrite"
+                  value="Class=True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e65db7f3-e2a8-4b8d-9241-1924adf7bda9">
+                <propertyInstance
+                  Id="94b76ad6-c9a2-4406-9d64-09ead91fbe23"
+                  name="Parameters" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1420e8de-be25-4fcd-af76-92e783f16e8c"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3aa29e4-f1cd-4b6f-91be-a35229260d14"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73ba2cab-006b-4aa9-b5d5-84763f29679f">
+                    <propertyInstance
+                      Id="1cc8e076-081b-4463-bc83-f281e11e9c08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15437a29-4825-42ea-90be-7c83d536b3c5">
+                    <propertyInstance
+                      Id="785be055-47fa-4a24-9623-0fd10b2310ec"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d25de95-7c50-4ca9-adb4-069b04a6d8f7">
+                    <propertyInstance
+                      Id="8099d438-7f42-41a6-9911-60aaf501e687"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f3a0d9a-c4c8-49a7-9fc2-55ddd441b710">
+                    <propertyInstance
+                      Id="904747be-a094-45e2-b323-e8fb88269bf7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae0bcda2-cdba-4abe-b1c2-89dcf4a6786c">
+                    <propertyInstance
+                      Id="6573ce02-e949-4eb4-9b4f-23f8630e714a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24c1fedb-bd67-4c3d-911a-d26b2376e74b">
+                    <propertyInstance
+                      Id="85322177-f358-4c54-a646-e02333044e6e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be235faa-1f05-4fff-9816-d63fcdf01fae">
+                    <propertyInstance
+                      Id="e062aaf0-47c9-4098-be16-3520acef3a9f"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="823efb19-08e8-41ae-a9e3-eb99cc0d79e9"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fde934d8-9d4a-4bca-ad7b-419f4a36aad4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26ef0e94-0622-4aa6-ad61-c51216163325">
+                    <propertyInstance
+                      Id="da6d8cf9-15c6-4059-b439-2add4dcc7239"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eeeb2b24-0400-47d3-aa02-d4f30dbd49e2">
+                    <propertyInstance
+                      Id="91b4f502-de2a-4987-965c-d11916c83172"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9736a23c-31f6-483a-8d11-10dbc515506d">
+                    <propertyInstance
+                      Id="d9445667-55c3-45da-a7db-7a1030122ce7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f75464be-78da-44ff-a870-3496e1c46c78">
+                    <propertyInstance
+                      Id="5e2238e2-009c-4de7-b409-9cfad5de5598"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf8a3510-3285-4321-bf04-33ec05410241">
+                    <propertyInstance
+                      Id="14b85269-89d7-4812-a867-c315c16a7007"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="435067e2-4de5-46c8-83bd-618faf79e482">
+                    <propertyInstance
+                      Id="4b43b472-0d8d-4ec8-b65d-47ffa13eb624"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e88ef4a-2502-4767-be03-4307d3d3bf51">
+                    <propertyInstance
+                      Id="3b2c6947-09b7-43fa-9228-f5cd64dbdb44"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3b1e5b31-d4ed-41cd-834d-abb989f09692"
+            name="Senhas"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="56db7b53-2abf-4b29-9729-0f3de90e5d3c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07f61ba3-47a3-4a98-bdd8-cd4137fac853">
+                    <propertyInstance
+                      Id="671e68bb-648e-421c-8058-4758aebf182a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98f8b1a4-15ed-4e0c-9098-e2a11d29816b">
+                    <propertyInstance
+                      Id="094f1373-d873-476d-b9a4-9e05b0a27eb7"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c611cf9-79cf-46b1-9088-c2df722046e8">
+                    <propertyInstance
+                      Id="41624d66-4ea9-4b05-9b93-f2900052478e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2af6e6fb-d3ec-4e25-ac26-00d358268da1">
+                    <propertyInstance
+                      Id="23c75e7d-020c-492e-8e63-705991df0551"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f85e15e-6551-425a-b5a0-3a077fa0f213">
+                    <propertyInstance
+                      Id="b0af84db-4d6b-42c3-bd6c-9c29c5176ca3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d67d9fc-1b8d-4aa5-afca-4188141a4348">
+                    <propertyInstance
+                      Id="495d7821-c60f-49d5-9c57-a755ff219f63"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b24af8a7-ee59-4cfe-a707-bc4111db797c">
+                    <propertyInstance
+                      Id="cc57c1a1-e8c0-49eb-a112-7d79654f8c5d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="e167c918-5cb0-465f-b7ce-1b56829d976d"
+                name="Lower"
+                value="1" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="2035e7df-67ce-4405-976e-57432cd04737"
+                name="Upper"
+                value="2" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78"
+                LastKnownName="UsuarioExternoSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f492d228-b022-4903-b9f8-f5f9180f1733"
+            name="Autenticar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3cc38dd-4b7e-4f8f-8229-73671210642f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="417d373c-9e77-46ce-b5dc-42729d3d135a">
+                    <propertyInstance
+                      Id="2ef14380-02ad-4347-9cea-13cf90d8234b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d972f175-cc60-4f06-a73f-c4250a0d4bb5">
+                    <propertyInstance
+                      Id="4b27191c-4676-468a-98e0-40d8b55ea951"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="616d449f-707f-4ac5-9526-e2b208893f67">
+                    <propertyInstance
+                      Id="d2e90e84-61e8-4be8-9710-65595c1b69a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="656531f8-2343-4001-b37b-a4e2471281f5">
+                    <propertyInstance
+                      Id="38950792-d8c1-4cea-9abc-207df9a77903"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3452b29a-ac46-4c37-bb15-b78d654ea74d">
+                    <propertyInstance
+                      Id="877bd6da-ba69-4530-bb05-eeebf81815c4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="119a0e83-f67c-4b22-aa93-adc32f30dd8c">
+                    <propertyInstance
+                      Id="f6ec6edb-1f83-43d7-aa35-14b408ae25c1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d16c237-f456-4cf0-b16b-d022168df5c5"
+                  name="senha"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ControleAcesso.Modelagem.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="776100ea-d11c-48a1-b594-d83fca3e487d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78"
+                      LastKnownName="UsuarioExternoSenha"
+                      LastKnownLocation="ControleAcesso.Modelagem.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78"
+        name="UsuarioExternoSenha"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5f856ed3-6ac5-4dd5-b31a-45fc01b0dfe7"
+            name="TextTemplateBindings"
+            profile="TextTemplateBindings">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="85d7b018-ee45-4672-8c50-c2525a731551">
+                <propertyInstance
+                  Id="09ed5360-caf3-48fe-81cc-758c0b353b22"
+                  name="Alias"
+                  value="Class" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2de3636-60a0-48eb-9661-150e3f2d1130">
+                <propertyInstance
+                  Id="802808bd-3ecf-469a-ac25-34c6363463a6"
+                  name="TemplateFilePath"
+                  value="Class=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1cc77810-fc53-4b56-b984-a824af7232b9">
+                <propertyInstance
+                  Id="a9a683de-35f6-43f8-a6aa-88a13ede20ad"
+                  name="ProjectPath"
+                  value="Class=..\ControleAcesso.Dominio\ControleAcesso.Dominio.csproj" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e8c6d5a-eb40-4384-867d-ed83ab973f64">
+                <propertyInstance
+                  Id="6b878dad-e855-42d8-955c-75bdbee68dae"
+                  name="TargetDirectory"
+                  value="Class=Entidades\{PackageStructure}" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19f23a62-20e6-4efb-a1c7-cfb4c0a8e5b9">
+                <propertyInstance
+                  Id="97774721-e703-41cb-907d-b238f2c1c3af"
+                  name="TargetName"
+                  value="Class={Name}" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4b6dd1e-89e9-426e-b981-a84e7bdf4df4">
+                <propertyInstance
+                  Id="aeca79da-86be-4730-a836-0f0a238b383d"
+                  name="Overwrite"
+                  value="Class=True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8476f26-0c73-4c8f-9ff3-4136f4960ae2">
+                <propertyInstance
+                  Id="38063f39-037b-4937-a97b-5fec43228078"
+                  name="Parameters" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="00fceb49-ae7c-4cc8-9405-bef061cd2189"
+            isDerived="false"
+            sourceEndRoleName="Senhas"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="48828ea1-0807-4c86-925e-f03d869e8caf"
+              LastKnownName="UsuarioExterno"
+              LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f20791d6-defb-4e32-90d4-bf615bf60d53"
+                  name="Senhas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c3613486-2a78-4b2d-8ac2-5fadb60663bc"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b4531699-ba34-4fb2-863e-329b1775bf65"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10d78d44-8db7-4d15-bacf-8b21c720b759"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c0eed4db-9483-49fd-95a4-4db0ca3e27cf"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="92d78e7f-f2f7-4edc-913f-68b3bb7aa0a9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="525799ec-6f6c-4966-b40a-672c06a9f2e0">
+                    <propertyInstance
+                      Id="0b3c5d37-2f5f-48d9-8c8a-b6a204ee7039"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70a479b1-c83f-4124-b959-9a935bbb64e2">
+                    <propertyInstance
+                      Id="9c3a793b-9231-4693-ac90-d61f8d977a39"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d51128a3-8477-4d65-9306-16367e492d13">
+                    <propertyInstance
+                      Id="0df5be68-a081-4712-89ba-ca7ff0c49f9c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f78ba484-9fc1-4975-954a-c1e159701fd8">
+                    <propertyInstance
+                      Id="0a57ab25-a94c-4ebd-a895-3d80288fc5a2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc7c4c56-3ddf-471f-a559-69bfeda566d0">
+                    <propertyInstance
+                      Id="34ec0f89-54b0-4315-b9c5-1bb695945b8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c074d1ba-ac57-4494-b81f-4122f4a92834">
+                    <propertyInstance
+                      Id="dc22b94a-8878-4050-917a-d3486d269285"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c15ee505-193b-418c-b709-f42a41a6ab83">
+                    <propertyInstance
+                      Id="34f2352d-064e-4c4a-99f0-8ef6f949c773"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cbd48dc3-1091-4e16-ad2b-bcf912aa9972"
+            name="Senha"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dc8be09b-01fe-4bbc-ab99-41e2046a5ba8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c963b25-cfcb-4f35-baac-9f2d206f12d8">
+                    <propertyInstance
+                      Id="6b6b5b18-7f99-427b-89a4-f7e8c80fd018"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f3a7bd6-02cc-46ea-ae92-03a46e2febb0">
+                    <propertyInstance
+                      Id="74b3b75b-2510-43f4-bec1-cb82a1be8ab2"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08257487-5ba1-41ee-b088-e6b5fdc7adb2">
+                    <propertyInstance
+                      Id="fcb9e87f-60b0-441a-98a6-0c08857c8844"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d35b185-32ab-4c92-9fa4-0ecb52b27276">
+                    <propertyInstance
+                      Id="6aa7a829-05c8-4e05-994b-2a8cc465ebc7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80fb40b2-da36-447a-ae90-eae82538a0ee">
+                    <propertyInstance
+                      Id="e85d2ffb-4998-401b-aa45-034fb0586f43"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6312b047-852a-42d5-bd6b-17b010eacf69">
+                    <propertyInstance
+                      Id="ad304809-476d-48ee-8ec6-87b9ee3a7df5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6156d69-8476-4692-8147-97cbbdf11d28">
+                    <propertyInstance
+                      Id="989f7e96-12bf-4e4a-8477-b55e26e47ebb"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="db11d75a-3c3e-45b3-adac-7cc905689214"
+            name="Tipo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ffb812c-7745-4dfa-b32b-4dfc607b233b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ed578d7-891d-401d-a014-d355a713d926">
+                    <propertyInstance
+                      Id="5607eb53-c99b-40ab-8fc9-28766947727f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3a183e6-261a-4fcf-84c6-b15d1c6b3e1b">
+                    <propertyInstance
+                      Id="64b694c5-c751-4249-83ff-85e9f75bc412"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fa681cc-1daf-4ca0-9a1e-9085f2645a34">
+                    <propertyInstance
+                      Id="aea19348-b653-45ad-b2d8-dbca4452e41c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c57dafa6-4070-433e-84b8-92410c92b155">
+                    <propertyInstance
+                      Id="952b569b-d35a-477e-8776-e1bba8a92337"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16172329-ea3f-46dd-819f-15359d872486">
+                    <propertyInstance
+                      Id="7ed3e692-18a8-43c8-aaa6-4e4b7eac6ce5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2a5d709-a144-4903-9384-66ebefeab1cd">
+                    <propertyInstance
+                      Id="47100074-8827-4396-87ef-5815d6fa476c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55c1726d-6adc-4985-96d2-306c5ed7fd4c">
+                    <propertyInstance
+                      Id="ede75d1f-9dde-4fe4-9dae-8d9421024ad7"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="97ca81e9-714d-4125-8f30-8263a81e9a50"
+            name="DataExpiracao"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef2bdd4a-0e90-4f30-af43-1cf9736bfa35"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92f796b4-bf92-4bd7-9d11-d8cdb0701ed1">
+                    <propertyInstance
+                      Id="aae1d589-bf7c-4725-8ff7-203b8367935b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8570c473-d923-447a-95d6-703a14324b4a">
+                    <propertyInstance
+                      Id="da33662e-5d38-444c-88f6-6987926230f5"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d97a03d2-b53d-4f41-ba5e-5d49348020dd">
+                    <propertyInstance
+                      Id="6366adce-1566-4cd8-86aa-ee67089c50eb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3154c75d-d273-46bf-af6c-59a3a40923e7">
+                    <propertyInstance
+                      Id="8938263e-8b89-426d-a32d-d2731e50d907"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="094ca45a-7e6b-4f03-8537-4561fc4861b9">
+                    <propertyInstance
+                      Id="fd8581cd-6c8c-4e12-96da-039361043837"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fdfaa83-e496-4a3f-9542-4861e7ce7cf7">
+                    <propertyInstance
+                      Id="0e6ea30c-9ba2-4fa0-91f9-51c2efa5ab62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a503eab-8841-44c2-98fa-5db4a92242a1">
+                    <propertyInstance
+                      Id="0b5f625c-9769-4df0-980d-490b33f5aa28"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="54d48944-1ee9-4f46-8c9f-3e66e2560883"
+                LastKnownName="DateTime"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="132feb26-0bed-4b38-bb70-39c6cbf93992"
+            name="IsTemporario"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98769f6d-9a00-4a02-988c-a2f4c3a310b1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86688d2f-243a-453f-b5b2-a7e74e54b8b6">
+                    <propertyInstance
+                      Id="a8c87829-9565-48a4-b04f-d1b0e10e972a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3516128-2b5c-4fe3-80a7-df2dca67f3d2">
+                    <propertyInstance
+                      Id="ed9c123a-a421-4f60-a49a-87a5995d14f0"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a991eee1-39a8-49f1-88e5-3cdcda8f1f89">
+                    <propertyInstance
+                      Id="1a841e62-c42b-4aa1-98b0-04627e827493"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48ff8b19-ba74-4776-bbc0-df3f5acbd2c0">
+                    <propertyInstance
+                      Id="7e05c18f-f9ff-4935-b9e7-4fbd1a40ac83"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09b4f211-99b4-4d4f-a0db-61d66f5168db">
+                    <propertyInstance
+                      Id="e3563ed2-17dc-44ff-9415-5f3fbdae52a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa0fdd2c-41ac-46ec-9f65-ed990918d20e">
+                    <propertyInstance
+                      Id="9a164e5f-2d17-4374-8267-808cfa06c8b3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd8339da-e383-44b3-94ba-b1a6e6017bb6">
+                    <propertyInstance
+                      Id="960a1a30-5664-4773-b190-380b008d527f"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c510ac0e-828f-4f3d-ae32-80c1361e135f"
+            name="IsPermanente"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b56cc272-0b6c-461a-b15a-4ac56c40da08"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d96551b-0799-465b-80d0-46b804954695">
+                    <propertyInstance
+                      Id="f2280ef2-50fd-4092-aee4-399d7e0ee141"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="643f57c0-37f4-495d-b324-034d8c1324fd">
+                    <propertyInstance
+                      Id="5f0832b4-c130-409f-84be-a8b906a98650"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="099689b4-593c-4cc4-91e5-f4b52c422d44">
+                    <propertyInstance
+                      Id="6e5636cc-b024-4d72-9cac-a844aef67ebd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4374cc3f-ae7a-4889-95a0-7100142cb1c4">
+                    <propertyInstance
+                      Id="9f039815-6791-4db3-8568-29d5eace8a41"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d6f92d3-0c97-4c2a-8737-55bd99725c33">
+                    <propertyInstance
+                      Id="d9ce79e2-c64b-4818-9982-2dadc53f6340"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51e0282b-8dd5-4e0b-8d3d-f42ab1f0cc90">
+                    <propertyInstance
+                      Id="8a27c37c-b36b-49fb-8203-7177175c15e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e51f3526-c502-4bf4-8143-26faffd98436">
+                    <propertyInstance
+                      Id="57628f0a-add7-4d63-9c03-065428c376c2"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4594b1a2-57f0-4774-a58c-660aecfbe4ef"
+            name="LoginExterno"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a92a4de4-7cdf-46d0-9915-0ecef4d347c1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02c919fd-ace1-4bc4-9645-1488bcf94ca4">
+                    <propertyInstance
+                      Id="98805b61-09ab-4783-a1f0-c4e15e7b38b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d468866-281a-4083-aa43-8e5b6fc63dc1">
+                    <propertyInstance
+                      Id="86c2ed26-e90f-4f1f-829b-1393a16f80ea"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfd18533-8310-4ec1-a269-807e0266512f">
+                    <propertyInstance
+                      Id="1373da6a-1eff-40fb-9bb5-e86ce349260c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06728e40-2c2b-4503-8ffa-b631e074e311">
+                    <propertyInstance
+                      Id="ad9a8e00-22c4-4f4f-b584-81831203affc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6976c750-425c-4166-9b77-80db2600d5da">
+                    <propertyInstance
+                      Id="cda1b4d7-b819-4d4a-8919-d97c3907bf02"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f859dc2-5120-46ad-8fbd-46cd1d7b96f8">
+                    <propertyInstance
+                      Id="e5ba9b36-9b1a-4996-9ba3-45d62d612e82"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9be434ce-e539-4bda-978f-e6a935d380c7">
+                    <propertyInstance
+                      Id="c6ae5007-7794-474e-be32-9656114acabf"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="48828ea1-0807-4c86-925e-f03d869e8caf"
+                LastKnownName="UsuarioExterno"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a0dc88ba-9d66-4052-8351-828e2cfda108"
+            name="ValidarSenha"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5df8ef3f-b997-472e-b0ed-243005afe99e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b44fed34-e636-4aac-8cce-4d867f45641c">
+                    <propertyInstance
+                      Id="745a4576-28cb-4404-8853-5f20b5e6a449"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a22593b2-c94a-40dd-9689-1a606c9c85d6">
+                    <propertyInstance
+                      Id="6a505831-ffe8-4893-a841-764978e854db"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f895a92-28ab-4e2e-92dd-8c6c5a66b395">
+                    <propertyInstance
+                      Id="f1489104-d79b-4e0f-9579-3148897e8e49"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="190e5cd6-9cf7-412b-9f26-700e50925a5d">
+                    <propertyInstance
+                      Id="78a77933-4116-45ae-a88c-466bd0aa3b5a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82120201-9a6f-413a-9e73-bb129288d286">
+                    <propertyInstance
+                      Id="36b41b9c-a44b-4640-a07a-13a1deaf0961"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bebd2c0e-c0ea-403b-9170-37b885f9374b">
+                    <propertyInstance
+                      Id="ece1d53a-e21e-494e-ab92-b05e7e46b1ee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="609810a3-9c58-4a6f-b35b-3dbb10bee244"
+                  name="senha"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ControleAcesso.Modelagem.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="360b6fec-2de1-4a4e-b7ff-4cb868f2ce43"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ControleAcesso.Modelagem.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="54d48944-1ee9-4f46-8c9f-3e66e2560883"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="05960515-8faa-4e41-8a43-122e06fc9444"
+        name="Autenticacao"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="bd4ebf7a-5b49-4f5b-bb74-72d11ef0b17e"
+            name="Avaliador : Avaliador"
+            isActor="true"
+            lifelineDisplayName="Avaliador : Avaliador">
+            <represents>
+              <propertyMoniker
+                Id="b377ea74-cae1-492e-885d-ee2c37518f53"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property
+            Id="b2a1f4f9-f09d-4321-b715-24eb72c131d1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="48828ea1-0807-4c86-925e-f03d869e8caf"
+                LastKnownName="UsuarioExterno"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="22a580a3-009a-4c5e-855f-1a70d7ef2266"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="748dcca2-42a4-486a-b873-30538503fc6b"
+                LastKnownName="Autentica"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b377ea74-cae1-492e-885d-ee2c37518f53"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="346bb9d4-8edc-44e9-a52a-f6a9af1ea8cd"
+                LastKnownName="Avaliador"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64ed447f-9a64-44d1-b61a-0c3c290a7859"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="748dcca2-42a4-486a-b873-30538503fc6b"
+                LastKnownName="Autentica"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0270fe88-bb73-40dd-9449-9a856a121572"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="1ce8074e-b608-470b-a606-36d86502e6ff"
+                LastKnownName="AlteraSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a37e218a-a073-4caf-ae2a-c31c590f02c6"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78"
+                LastKnownName="UsuarioExternoSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="346bb9d4-8edc-44e9-a52a-f6a9af1ea8cd"
+        name="Avaliador"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="80c5ce06-96d7-4b5c-8d4b-b18ab3f728ea"
+            isDerived="false"
+            sourceEndRoleName="Usuário Externo"
+            targetEndRoleName="Autentica"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="748dcca2-42a4-486a-b873-30538503fc6b"
+              LastKnownName="Autentica"
+              LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5152351b-2d05-4521-ac71-47eaadbfcbc2"
+                  name="Usuário Externo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d223eb7-9ce9-4e39-9c99-1480f43e7f4e"
+                  name="Autentica"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="54e9c3b3-79bb-4ab3-8f7e-aab54efb7d52"
+            isDerived="false"
+            sourceEndRoleName="Usuário Externo"
+            targetEndRoleName="AlteraSenha"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1ce8074e-b608-470b-a606-36d86502e6ff"
+              LastKnownName="AlteraSenha"
+              LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ec04510-c0b7-418e-a674-07b53bb973d1"
+                  name="Usuário Externo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cf17c5c-2454-4cf0-9dab-9dd5d34e9e75"
+                  name="AlteraSenha"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3a640209-ca2e-40d4-8645-541e4620e9c3"
+            isDerived="false"
+            sourceEndRoleName="Usuário Externo"
+            targetEndRoleName="Esquece a senha"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2babb43f-0fc2-4f8f-9251-78a4ec5a5594"
+              LastKnownName="Esquece a senha"
+              LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="556b3ae9-6f2b-47f0-ae00-fd0ff1b3d8d2"
+                  name="Usuário Externo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c88ea73-9b01-420e-99b6-6a8218ba9402"
+                  name="Esquece a senha"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="748dcca2-42a4-486a-b873-30538503fc6b"
+        name="Autentica"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1ce8074e-b608-470b-a606-36d86502e6ff"
+        name="AlteraSenha"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4bbfbcd9-d45e-4133-9309-4cb9823577c4">
+            <useCaseMoniker
+              Id="748dcca2-42a4-486a-b873-30538503fc6b"
+              LastKnownName="Autentica"
+              LastKnownLocation="ControleAcesso.Modelagem.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2babb43f-0fc2-4f8f-9251-78a4ec5a5594"
+        name="Esquece a senha"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="dfd6b8d1-029d-4180-8d76-21d304773710"
+        name="Autenticacao"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a86fb357-c464-46af-9d45-16218f9a6c60"
+            name="Início"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ae2ffaa8-1768-4a1a-905e-32725aa658b1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9987d134-f143-473e-8e6a-8822d79d3e36"
+                  LastKnownName="Verificar existência do usuário"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="9987d134-f143-473e-8e6a-8822d79d3e36"
+            name="Verificar existência do usuário"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f236d7b5-2665-40ac-9571-c41fdcf1a391"
+                name="Existem senhas para o usuário?"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="51749df1-b8f3-4b96-8a02-dfe7306149b5"
+                  LastKnownName="Existem senhas para o usuário?"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="51749df1-b8f3-4b96-8a02-dfe7306149b5"
+            name="Existem senhas para o usuário?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="02ae6a31-2186-4111-8baa-339d0cb97fd7"
+                guard="O usuário não existe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aeea96f7-4679-43e6-a170-bb112551c079"
+                  LastKnownName="Informar login ou senha inválidos"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="bbde3d16-9e62-4439-b614-c26ff8f94c97"
+                guard="O usuário existe"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityParameterNodeMoniker
+                  Id="d0c2603c-2f20-4303-ba68-1bb6c1292997"
+                  LastKnownName="Validar Senha"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="aeea96f7-4679-43e6-a170-bb112551c079"
+            name="Informar login ou senha inválidos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f00f1d2f-cdef-4d7d-87a1-bb633417b412"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityParameterNode
+            Id="d0c2603c-2f20-4303-ba68-1bb6c1292997"
+            name="Validar Senha"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="61c1d578-59ec-4938-b1b0-7ccb76afbd78"
+                LastKnownName="UsuarioExternoSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </type_NamedElement>
+            <objectFlowTargets>
+              <objectFlow
+                Id="53dd6bc0-9255-41b5-9523-8ede8830276f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <decisionNodeMoniker
+                  Id="e54a662f-e4f7-452b-a3a9-d605c1297b4b"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="f4502486-d184-428e-932a-ccbeb714683b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+            <selection>
+              <activityMoniker
+                Id="4eda6054-7f03-4baf-af9f-a08ee8b2ed80"
+                LastKnownName="ValidarSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </selection>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="341c492c-651d-4734-a76b-537544d708f1"
+            name="Alterar senha"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7d5303ac-0270-4b2d-9454-5d4248417d25"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="34ab5952-777c-4afd-acac-9cf512c886ba"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <decisionNode
+            Id="e54a662f-e4f7-452b-a3a9-d605c1297b4b"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="90f4261c-c530-4c0f-bdd6-395fce51f45c"
+                guard="Senha permanente válida"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="110fcf59-2a2c-4840-8c40-ba92343b127e"
+                guard="Senha inválida"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aeea96f7-4679-43e6-a170-bb112551c079"
+                  LastKnownName="Informar login ou senha inválidos"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="2f34df84-6f85-4198-96ac-18b9c6df634f"
+                guard="Senha temporária válida"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityParameterNodeMoniker
+                  Id="341c492c-651d-4734-a76b-537544d708f1"
+                  LastKnownName="Alterar senha"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="0dafafdc-6faa-4303-8bf4-74dd49f694fb"
+                guard="Senha temporária expirada"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="a7ad819c-37b0-4bb5-b0ab-0cc85a43e87d"
+                  LastKnownName="Gerar Senha Temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <objectNode
+            Id="a7ad819c-37b0-4bb5-b0ab-0cc85a43e87d"
+            name="Gerar Senha Temporária"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="acfccac0-3537-478f-8353-254879eeffde"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="9a99f4ea-3ec8-4c09-a1b1-171fd9d127c2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="b3f6ee68-e540-4117-9c71-6e89d76ee6a9"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+            <selection>
+              <activityMoniker
+                Id="051e6825-e6b1-4863-bbcd-9c14228eb874"
+                LastKnownName="GerarSenhaTemporaria"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </selection>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="b9be9410-6851-4db6-9a60-b44ee66c00db"
+        name="AlterarSenha"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a7efc38a-ee8a-4359-9c32-0011556517f0"
+            name="Initial1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="32c1db4e-b94c-494f-a235-cfe7dfa3825c"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityParameterNodeMoniker
+                  Id="06538c65-ba86-4a05-b706-deadb6da73dc"
+                  LastKnownName="Validar Senha atual"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <decisionNode
+            Id="6e2c9673-82b8-4020-ad0c-ebc04f9b1ba0"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="48f42484-9c8a-434f-82ee-f9ac15acfcc9"
+                guard="Senha incorreta"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e1f5020f-3297-4fa0-a8b9-018a0191abda"
+                  LastKnownName="Avisar que senha atual&#xD;&#xA;informada está incorreta"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fe28dc19-d563-4e04-8c07-4189ccb7f935"
+                guard="Senha correta"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a9d25a08-77d5-4619-b216-b6286c87335a"
+                  LastKnownName="Alterar senha permanente"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e1f5020f-3297-4fa0-a8b9-018a0191abda"
+            name="Avisar que senha atual&#xD;&#xA;informada está incorreta"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="23b0a639-6fae-424c-871d-70b7b18ab425"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="26d8406c-fbb6-421c-9841-b59cd2e7265e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="26d8406c-fbb6-421c-9841-b59cd2e7265e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <activityParameterNode
+            Id="06538c65-ba86-4a05-b706-deadb6da73dc"
+            name="Validar Senha atual"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="305e465c-0cf2-474a-9430-6eea7dcdddc6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <decisionNodeMoniker
+                  Id="6e2c9673-82b8-4020-ad0c-ebc04f9b1ba0"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="3a48b8e7-5734-40b2-9d3c-d4095f91d8a3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+            <selection>
+              <activityMoniker
+                Id="4eda6054-7f03-4baf-af9f-a08ee8b2ed80"
+                LastKnownName="ValidarSenha"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </selection>
+          </activityParameterNode>
+          <opaqueAction
+            Id="a9d25a08-77d5-4619-b216-b6286c87335a"
+            name="Alterar senha permanente"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="48a34a08-4d2f-45f8-b27e-b86f160fa7a8"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="527a4b21-3149-4bac-8621-8e340fe7f6ef"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="527a4b21-3149-4bac-8621-8e340fe7f6ef"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4b10dcd1-7b8e-4964-ad16-b3a1e3168f85"
+                guard="A senha informada é permanente"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="26d8406c-fbb6-421c-9841-b59cd2e7265e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c32c4174-986e-41f7-8222-1d53c884e518"
+                guard="A senha informada é temporária"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="43a1b1d9-0ea4-4cc7-8c90-dcdf1ffe7485"
+                  LastKnownName="Excluir registro da senha temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="43a1b1d9-0ea4-4cc7-8c90-dcdf1ffe7485"
+            name="Excluir registro da senha temporária"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dc183aec-2fd8-47ee-a918-910230152579"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="26d8406c-fbb6-421c-9841-b59cd2e7265e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="4eda6054-7f03-4baf-af9f-a08ee8b2ed80"
+        name="ValidarSenha"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a1eacd3a-275a-492d-84ec-50ddf7c96b93"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ab839ea-941c-4f42-a7ef-23dcb02491d0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c09d9d3-893f-4b28-aa33-844c72ab4b46"
+                  LastKnownName="Validar senha temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="1c09d9d3-893f-4b28-aa33-844c72ab4b46"
+            name="Validar senha temporária"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e5866a90-c559-42b7-a5bb-71941bb58b0d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="478f69e4-ce32-45c3-a7e5-3b6c92d977f2"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="478f69e4-ce32-45c3-a7e5-3b6c92d977f2"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="92e548e1-dd3e-4e53-a609-1fc166037134"
+                guard="Senha temporária incorreta ou inexistente"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="73cfbc90-e75c-477b-a0f2-9cdb397c4ab5"
+                  LastKnownName="Validar senha permanente"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4bb23dff-99a2-4d52-bf39-4549ee42efd9"
+                guard="Senha temporária expirada"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e56b73c-6acd-47cf-beea-c56bc476f604"
+                  LastKnownName="Informar senha temporária expirada"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="39fef395-5f91-4b1c-861a-3e97f5b45edb"
+                guard="Senha temporária válida"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ac6f9c24-2498-4177-87ac-5243d0d2b113"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="73cfbc90-e75c-477b-a0f2-9cdb397c4ab5"
+            name="Validar senha permanente"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f822e902-bc14-4349-9743-930321174434"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="39ec3643-24f8-4a7b-845d-01165fe3e5cc"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="39ec3643-24f8-4a7b-845d-01165fe3e5cc"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b25c3b0b-eb62-45ad-bcfd-4f9d0f80e3d5"
+                guard="Senha permanente válida"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ac6f9c24-2498-4177-87ac-5243d0d2b113"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="edc2bacb-7ff9-40d5-a553-62bbc57791b5"
+                guard="Senha inválida"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9345f1c8-17c1-4ec6-a9d3-d454c3b9f4d3"
+                  LastKnownName="Informar login ou senha inválidos"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="ac6f9c24-2498-4177-87ac-5243d0d2b113"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9345f1c8-17c1-4ec6-a9d3-d454c3b9f4d3"
+            name="Informar login ou senha inválidos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="761f4aec-3e42-4e51-857f-7cb8cf83c901"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ac6f9c24-2498-4177-87ac-5243d0d2b113"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3e56b73c-6acd-47cf-beea-c56bc476f604"
+            name="Informar senha temporária expirada"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="36dd192c-1ddc-463b-ab89-436e489af667"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ac6f9c24-2498-4177-87ac-5243d0d2b113"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="716f395f-b5ae-4223-8b80-59640b3d9c36"
+        name="SolicitarSenhaTemporaria"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a9c6e49a-92c7-4bf1-81b8-4675d67692f9"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81f91430-9cdb-4c74-9cb9-ce6bbcc7630d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="90892cf5-d6d6-4d31-83a2-3291c0109440"
+                  LastKnownName="Verificar se o login informado existe"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="90892cf5-d6d6-4d31-83a2-3291c0109440"
+            name="Verificar se o login informado existe"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="adc1fb86-eb2a-48e3-82a3-862975da71b4"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="45be8c72-6fd7-4792-9a1b-93624d15bb11"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="a7aec53f-9fd0-4dcd-82e4-e20acfcf7d20"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="6dd8f6b6-644e-4287-b52e-982ef19d04ed"
+            name="Informar que o login não existe"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="daa94983-9b5a-4695-96cb-c628f2582f79"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a7aec53f-9fd0-4dcd-82e4-e20acfcf7d20"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="45be8c72-6fd7-4792-9a1b-93624d15bb11"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40cfd3d5-6e22-4a55-989d-842def18d014"
+                guard="Login informado não existe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6dd8f6b6-644e-4287-b52e-982ef19d04ed"
+                  LastKnownName="Informar que o login não existe"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2e186613-1543-4994-8fa0-41811ac03bde"
+                guard="Login informado existe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8a9bed41-a7ff-4ca9-b90d-28d0e2cdc6f2"
+                  LastKnownName="Excluir senha temporária do login informado"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="8a9bed41-a7ff-4ca9-b90d-28d0e2cdc6f2"
+            name="Excluir senha temporária do login informado"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d583dad8-5182-443f-a877-52f46896b9a4"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="bdfb336b-8c1b-4e9c-a3c9-b5a178e31cad"
+                  LastKnownName="Gerar Senha Temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="bdfb336b-8c1b-4e9c-a3c9-b5a178e31cad"
+            name="Gerar Senha Temporária"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="575bc50a-4586-443a-9e9d-5dbed69b4b1d"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="a7aec53f-9fd0-4dcd-82e4-e20acfcf7d20"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="572fa07b-fd93-42b2-85fe-f047e7ecb15b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+            <selection>
+              <activityMoniker
+                Id="051e6825-e6b1-4863-bbcd-9c14228eb874"
+                LastKnownName="GerarSenhaTemporaria"
+                LastKnownLocation="ControleAcesso.Modelagem.uml" />
+            </selection>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="051e6825-e6b1-4863-bbcd-9c14228eb874"
+        name="GerarSenhaTemporaria"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="1a65becc-5e79-47ab-af9f-868e62c92339"
+            name="Gerar nova senha temporária"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e0cbcfdc-c04b-4418-b81b-10f4db5ba7a1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4fa7394e-620b-46e5-9e2d-ca330915d49d"
+                  LastKnownName="Enviar senha temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4fa7394e-620b-46e5-9e2d-ca330915d49d"
+            name="Enviar senha temporária"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8a3189b9-ab90-4f23-9289-244da4859e74"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="23a652cc-a1af-42c9-b13b-69205895de02"
+                  LastKnownName="Informar envio de nova senha"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="23a652cc-a1af-42c9-b13b-69205895de02"
+            name="Informar envio de nova senha"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c7233002-3407-4ca0-9d76-017ef16b67ca"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f8ee1c8c-4eb4-4292-9513-b05951d92281"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="7f9e963f-de0e-4ae0-a736-d66608839236"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dc0dfcf5-af71-48ae-aca3-29bb37b866dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1a65becc-5e79-47ab-af9f-868e62c92339"
+                  LastKnownName="Gerar nova senha temporária"
+                  LastKnownLocation="ControleAcesso.Modelagem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="f8ee1c8c-4eb4-4292-9513-b05951d92281"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

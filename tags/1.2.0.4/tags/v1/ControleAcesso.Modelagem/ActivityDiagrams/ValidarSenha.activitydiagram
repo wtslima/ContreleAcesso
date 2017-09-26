@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b0c7b5b0-ecb6-4ed9-9b21-89d03130fa07" name="ValidarSenha" linkedPackageId="7895f8ad-93d6-4fb6-bfda-801a8e737241" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="41ee614b-16f0-4816-9674-623d7aae1f72" name="ValidarSenha" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="4eda6054-7f03-4baf-af9f-a08ee8b2ed80" />
+        <nodes>
+          <initialNode Id="22e10b1d-805b-4359-8ad0-bc3ba9a2b756" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a1eacd3a-275a-492d-84ec-50ddf7c96b93" />
+            <flowNodeTargets>
+              <controlFlow Id="05d05027-6d7e-40a2-8676-02ecdcebff9e" isLeaf="false">
+                <opaqueActionMoniker Id="e4e4fb98-0d7f-4b9e-819e-f5d052c9d25a" LastKnownName="Validar senha temporária" />
+                <elementDefinition Id="7ab839ea-941c-4f42-a7ef-23dcb02491d0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e4e4fb98-0d7f-4b9e-819e-f5d052c9d25a" name="Validar senha temporária" isLeaf="false">
+            <elementDefinition Id="1c09d9d3-893f-4b28-aa33-844c72ab4b46" />
+            <flowNodeTargets>
+              <controlFlow Id="3cbd81b2-2e9d-4acc-a701-f474108eb893" isLeaf="false">
+                <decisionNodeMoniker Id="5a1e2e45-f2a4-40df-8874-5625cc407707" LastKnownName="Decision1" />
+                <elementDefinition Id="e5866a90-c559-42b7-a5bb-71941bb58b0d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="5a1e2e45-f2a4-40df-8874-5625cc407707" name="Decision1" isLeaf="false">
+            <elementDefinition Id="478f69e4-ce32-45c3-a7e5-3b6c92d977f2" />
+            <flowNodeTargets>
+              <controlFlow Id="1affdb9e-da90-427a-b519-30e93be3b31f" guard="Senha temporária incorreta ou inexistente" isLeaf="false">
+                <opaqueActionMoniker Id="14989e6f-67f8-4c52-8322-57ff0eb1915a" LastKnownName="Validar senha permanente" />
+                <elementDefinition Id="92e548e1-dd3e-4e53-a609-1fc166037134" />
+              </controlFlow>
+              <controlFlow Id="45501cec-4823-4919-8952-e86c80e33002" guard="Senha temporária expirada" isLeaf="false">
+                <opaqueActionMoniker Id="f0123ea6-454f-4319-8e72-2c45cade555d" LastKnownName="Informar senha temporária expirada" />
+                <elementDefinition Id="4bb23dff-99a2-4d52-bf39-4549ee42efd9" />
+              </controlFlow>
+              <controlFlow Id="3d7d7749-d6cd-4c12-a8bc-aa053fbbb5a9" guard="Senha temporária válida" isLeaf="false">
+                <activityFinalNodeMoniker Id="7c37d09f-aae4-4a62-916f-61f10ab4db4f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="39fef395-5f91-4b1c-861a-3e97f5b45edb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="14989e6f-67f8-4c52-8322-57ff0eb1915a" name="Validar senha permanente" isLeaf="false">
+            <elementDefinition Id="73cfbc90-e75c-477b-a0f2-9cdb397c4ab5" />
+            <flowNodeTargets>
+              <controlFlow Id="2f1b583c-0e66-4739-965d-e261c77e00c5" isLeaf="false">
+                <decisionNodeMoniker Id="8c7e55c4-95e0-4b73-8653-23fd89bf0a51" LastKnownName="Decision2" />
+                <elementDefinition Id="f822e902-bc14-4349-9743-930321174434" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8c7e55c4-95e0-4b73-8653-23fd89bf0a51" name="Decision2" isLeaf="false">
+            <elementDefinition Id="39ec3643-24f8-4a7b-845d-01165fe3e5cc" />
+            <flowNodeTargets>
+              <controlFlow Id="ddcef6e1-9c27-4919-9886-ac0b1b158388" guard="Senha permanente válida" isLeaf="false">
+                <activityFinalNodeMoniker Id="7c37d09f-aae4-4a62-916f-61f10ab4db4f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b25c3b0b-eb62-45ad-bcfd-4f9d0f80e3d5" />
+              </controlFlow>
+              <controlFlow Id="057265bb-5b4a-43dd-85ee-a7657ff216eb" guard="Senha inválida" isLeaf="false">
+                <opaqueActionMoniker Id="17c9317d-d62d-4673-9f16-e5228a970081" LastKnownName="Informar login ou senha inválidos" />
+                <elementDefinition Id="edc2bacb-7ff9-40d5-a553-62bbc57791b5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="7c37d09f-aae4-4a62-916f-61f10ab4db4f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="ac6f9c24-2498-4177-87ac-5243d0d2b113" />
+          </activityFinalNode>
+          <opaqueAction Id="17c9317d-d62d-4673-9f16-e5228a970081" name="Informar login ou senha inválidos" isLeaf="false">
+            <elementDefinition Id="9345f1c8-17c1-4ec6-a9d3-d454c3b9f4d3" />
+            <flowNodeTargets>
+              <controlFlow Id="fef8a20d-ad2c-45af-9f67-b105e30814da" isLeaf="false">
+                <activityFinalNodeMoniker Id="7c37d09f-aae4-4a62-916f-61f10ab4db4f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="761f4aec-3e42-4e51-857f-7cb8cf83c901" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f0123ea6-454f-4319-8e72-2c45cade555d" name="Informar senha temporária expirada" isLeaf="false">
+            <elementDefinition Id="3e56b73c-6acd-47cf-beea-c56bc476f604" />
+            <flowNodeTargets>
+              <controlFlow Id="6ea71d3f-f547-4d7f-84e4-95a7bc735efd" isLeaf="false">
+                <activityFinalNodeMoniker Id="7c37d09f-aae4-4a62-916f-61f10ab4db4f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="36dd192c-1ddc-463b-ab89-436e489af667" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7895f8ad-93d6-4fb6-bfda-801a8e737241" name="Servir.Modelagem">
+    <elementDefinition Id="aba2b6c5-2376-4bd2-b278-f4c9f0211d26" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dd7feceb-6e90-49ae-a5f2-a2fa506d38f6">
+        <profileInstance Id="07850876-6464-4c42-8542-73da28a40179" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="810fceaf-a853-418a-ab77-912fbdf7a95c">
+        <profileInstance Id="0398780c-02ec-4f70-b6ec-763d2f91422b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

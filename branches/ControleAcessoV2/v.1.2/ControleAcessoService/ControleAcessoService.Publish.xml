@@ -1,0 +1,27 @@
+<publishData>
+  <publishTarget publishUrl="C:\ControleAcesso\">
+    <file relUrl="bin/ControleAcesso.Dominio.pdb" publishTime="10/10/2013 12:01:51" />
+    <file relUrl="bin/AutoMapper.xml" publishTime="10/09/2013 12:08:59" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.pdb" publishTime="10/10/2013 12:01:57" />
+    <file relUrl="bin/Corporativo.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/Corporativo.Utils.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.dll" publishTime="10/10/2013 12:01:56" />
+    <file relUrl="bin/log4net.dll" publishTime="10/09/2013 12:08:53" />
+    <file relUrl="bin/ControleAcesso.Dominio.dll" publishTime="10/10/2013 12:01:51" />
+    <file relUrl="bin/log4net.xml" publishTime="10/09/2013 12:08:53" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcessoService.dll" publishTime="10/10/2013 12:02:00" />
+    <file relUrl="bin/ControleAcesso.Dominio.Infra.pdb" publishTime="10/10/2013 12:01:56" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcessoService.pdb" publishTime="10/10/2013 12:02:00" />
+    <file relUrl="bin/AutoMapper.dll" publishTime="10/09/2013 12:08:59" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/NHibernate.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/System.Data.SQLite.Linq.dll" publishTime="10/09/2013 12:09:00" />
+    <file relUrl="bin/FluentNHibernate.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/NHibernate.dll" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/ControleAcesso.Dominio.Aplicacao.dll" publishTime="10/10/2013 12:01:57" />
+    <file relUrl="bin/Corporativo.xml" publishTime="10/09/2013 12:08:40" />
+    <file relUrl="bin/System.Data.SQLite.dll" publishTime="10/09/2013 12:09:00" />
+  </publishTarget>
+</publishData>

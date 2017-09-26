@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AlterarSenha">
+  <activityRootModelMoniker Id="cade2869-cab1-452c-91cf-bce7d72582c8" />
+  <nestedChildShapes>
+    <initialNodeShape Id="401a4e34-5372-4aee-b5bd-1ea289c1f5a0" absoluteBounds="3.75, 0.5, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="b7eebf0e-4a7c-4683-8729-80ad33a118a0" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <decisionNodeShape Id="74e180c2-42c4-4f9d-b6de-8c3e30c9fd8c" absoluteBounds="3.625, 1.75, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="2f40f8b2-e35b-4567-9360-b912f9c8a85a" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="b77508c1-3fcc-4b1e-b529-62515c1982b5" absoluteBounds="5.5, 3.25, 1.375, 0.5" customColor="255, 128, 128">
+      <opaqueActionMoniker Id="b7901d46-d5c6-4770-8506-13683bd53d3b" LastKnownName="Avisar que senha atual&#xD;&#xA;informada está incorreta" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(4 : 1.9375); (6.1875 : 1.9375); (6.1875 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="992028c2-58cb-48fb-9e5e-0592aabe0580" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="74e180c2-42c4-4f9d-b6de-8c3e30c9fd8c" />
+        <actionShapeMoniker Id="b77508c1-3fcc-4b1e-b529-62515c1982b5" />
+      </nodes>
+    </controlFlowConnector>
+    <activityFinalNodeShape Id="0bc83585-7241-40ea-a6b1-98faafa1bc52" absoluteBounds="3.75, 4.875, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="e2bf7a3d-e60b-4971-bc2c-6288f6ab2683" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(6.1875 : 3.75); (6.1875 : 4.9375); (3.875 : 4.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="2d64e090-88d6-49e3-b25e-4648796277bf" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b77508c1-3fcc-4b1e-b529-62515c1982b5" />
+        <activityFinalNodeShapeMoniker Id="0bc83585-7241-40ea-a6b1-98faafa1bc52" />
+      </nodes>
+    </controlFlowConnector>
+    <activityParameterNodeShape Id="97596255-8abc-4d54-9b00-e4ff7e5d1101" absoluteBounds="3.125, 1, 1.5, 0.375" customColor="White">
+      <activityParameterNodeMoniker Id="aa973793-6a9a-4c92-8dd7-b5814eb2273a" LastKnownName="Validar Senha atual" />
+    </activityParameterNodeShape>
+    <objectFlowConnector edgePoints="[(3.8125 : 0.625); (3.8125 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <objectFlowMoniker Id="1cc58f53-ef20-4e2d-94aa-117a1272fab3" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="401a4e34-5372-4aee-b5bd-1ea289c1f5a0" />
+        <activityParameterNodeShapeMoniker Id="97596255-8abc-4d54-9b00-e4ff7e5d1101" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(3.8125 : 1.375); (3.8125 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <objectFlowMoniker Id="35c3d1a8-b968-498d-a928-32dafdad5bbf" />
+      <relativeChildShapes />
+      <nodes>
+        <activityParameterNodeShapeMoniker Id="97596255-8abc-4d54-9b00-e4ff7e5d1101" />
+        <decisionNodeShapeMoniker Id="74e180c2-42c4-4f9d-b6de-8c3e30c9fd8c" />
+      </nodes>
+    </objectFlowConnector>
+    <actionShape Id="7b3595af-21aa-4b10-8bee-cf27231fc95a" absoluteBounds="3.25, 2.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="a86574fc-d4c8-4166-b920-b87d091a4802" LastKnownName="Alterar senha permanente" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(3.8125 : 2.125); (3.8125 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="a1a40f39-96de-4da8-b100-a715843cf8db" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="2.9375, 2.3125, 0.82805263996124268, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="74e180c2-42c4-4f9d-b6de-8c3e30c9fd8c" />
+        <actionShapeMoniker Id="7b3595af-21aa-4b10-8bee-cf27231fc95a" />
+      </nodes>
+    </controlFlowConnector>
+    <decisionNodeShape Id="8d7d9b37-9667-4647-a3cf-8e59c0b65b22" absoluteBounds="3.625, 3.875, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="b45e2de7-8658-405d-b9eb-34187c98660b" LastKnownName="Decision2" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <controlFlowConnector edgePoints="[(3.8125 : 3.25); (3.8125 : 3.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="5fa343c4-17f3-497f-b0bd-b37597a57f59" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="7b3595af-21aa-4b10-8bee-cf27231fc95a" />
+        <decisionNodeShapeMoniker Id="8d7d9b37-9667-4647-a3cf-8e59c0b65b22" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.8125 : 4.25); (3.8125 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="e38ce05b-2ba2-4e28-b299-24890e727efc" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.8125, 4.3125, 1.8120478391647339, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="8d7d9b37-9667-4647-a3cf-8e59c0b65b22" />
+        <activityFinalNodeShapeMoniker Id="0bc83585-7241-40ea-a6b1-98faafa1bc52" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="b1682f33-2322-4a8d-a5f0-4eff3d8bd207" absoluteBounds="0.5, 3.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="1f061010-4976-473f-9926-63101374befb" LastKnownName="Excluir registro da senha temporária" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(3.625 : 4.0625); (1.625 : 4.0625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="3e26f0dd-3f29-405d-abec-72d7aadefa20" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="8d7d9b37-9667-4647-a3cf-8e59c0b65b22" />
+        <actionShapeMoniker Id="b1682f33-2322-4a8d-a5f0-4eff3d8bd207" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(1.0625 : 4.25); (1.0625 : 4.9375); (3.75 : 4.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="c669b4cb-3efd-4bf8-82bd-661997e62c6b" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b1682f33-2322-4a8d-a5f0-4eff3d8bd207" />
+        <activityFinalNodeShapeMoniker Id="0bc83585-7241-40ea-a6b1-98faafa1bc52" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

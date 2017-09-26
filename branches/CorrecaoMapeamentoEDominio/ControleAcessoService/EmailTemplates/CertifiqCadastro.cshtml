@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>[Certifiq] Cadastro no Certifiq efetuado com sucesso</title>
+<meta charset="utf-8">
+</head>
+<body marginheight="0" marginwidth="0" bgcolor="#ffffff" style="background-color:#ffffff; margin:0; padding:0;">
+	
+    <!-- Se não estiver visualizando... -->
+    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+            <td align="center" bgcolor="#094a6a">
+               <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF;">
+                   Certifiq - Confirmação de cadastro de usuário
+                </span>
+            </td>
+        </tr>
+    </table>
+    
+    <!--logo-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td align="center" style="border-bottom: 4px solid #094a6a">
+                <img src="http://imagens.inmetro.gov.br/ControleAcesso/imagens/email/logo-certifiq.png" />
+            </td>
+        </tr>
+    </table>
+    
+    <!--texto-->
+    <table width="100%" border="0" cellpadding="30" cellspacing="0" bgcolor="#EBEBEB">
+		<tr>
+        	<td style="font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:20px;">
+				Prezado,<br />
+				O seu cadastramento para acesso ao sistema Certifiq - Sistema de gerenciamento de certificados foi efetuado com sucesso em @DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss").<br />
+				Para acessar o sistema utilize a seguinte identificação de usuário:<br /><br />
+				Login: <span style="font-size:17px; color:#143d51;">@Model.Login</span><br />
+				Senha: <span style="font-size:17px; color:#143d51;">@Model.Senha</span><br />
+                <br />
+				<i>O sistema exigirá uma troca de senha na primeira vez que ela for utilizada.<br />
+				Atente para a diferença entre caracteres minúsculos e maiúsculos da senha.<br />
+				</i>
+				<br /><br />
+				Instituto Nacional de Metrologia, Qualidade e Tecnologia (Inmetro)<br />
+				<a href="http://www.inmetro.gov.br">www.inmetro.com.br</a>
+    		</td>
+        </tr>
+    </table>
+	
+    <!--assinatura-->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#ffffff">	
+        <tr>
+    		<td style="text-align:center; border-bottom:1px solid #CCC;">
+            	<img src="http://imagens.inmetro.gov.br/ControleAcesso/imagens/email/logo-inmetro-footer.png" />
+            </td>
+    	</tr>
+	</table>
+    
+</body>
+</html>

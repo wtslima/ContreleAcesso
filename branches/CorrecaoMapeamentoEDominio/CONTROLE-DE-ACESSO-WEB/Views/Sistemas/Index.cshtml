@@ -1,0 +1,80 @@
+﻿@model  CONTROLE_DE_ACESSO_WEB.Models.Sistemas.SistemasModel
+
+
+@{
+    ViewBag.Title = "Controle de Acesso - Sistemas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <!--linha#1-->
+    <div class="col-xs-12">
+        <h2>Manter Sistemas</h2><br>
+    </div>
+</div><!--/linha#1-->
+
+<div class="row">
+    <!--linha#2-->
+
+    <div class="col-sm-12 col-md-9 col-lg-8">
+        <!--conteiner formulário-->
+        <div class="well">
+            <form class="form-inline" id="FormPesquisar" name="FormPesquisar" onsubmit="return false" role="form">
+                <div class="form-group">
+                    <label for="sigla">Buscar Sistemas</label>
+                    <input type="hidden" name="Id" id="Id" value="">
+                    @Html.TextBox("CodSistema", "", new { @class = "form-control", id = "CodSistema", maxlength = "30", placeholder="Digite a Sigla ou Descrição" })
+                </div>
+                @*<div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        @Html.TextBox("DescSistema", "", new { @class = "form-control", id = "DescSistema", maxlength = "20" })
+                    </div>*@<!--pais-->
+                <button type="button" class="btn btn-primary btn-sm" id="btn_filtrar">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    Buscar 
+                </button>
+            </form>
+            </div>  
+        <!--/conteiner formulário-->
+    </div>
+</div>
+<!--/linha#2-->
+
+<!-- conteudo assync -->
+<div id="grdSistemas"></div>
+<!-- /conteudo assync -->
+@*@Html.Partial("ModalsPartial")*@
+@Html.Partial("ListarAsyncPartial", (PagedList.IPagedList<CONTROLE_DE_ACESSO_WEB.Models.Sistemas.SistemasModel>)ViewBag.Paginacao) 
+<!-- load -->
+<div id="ajax-load" class="carregando text-center" style="display:none;"><img src="~/Content/Images/carregando.gif" /><br />Processando...</div>
+<!-- /load -->
+
+<!-- alertas -->
+<div id="mensagem-erro" style="display:none;" class="alert alert-danger alert-dismissible" role="alert">
+    <strong>Erro!</strong> Não foi possível concluir a requisição.
+</div>
+<br><br><br><br><br><br><br><br>
+<!-- /alertas -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

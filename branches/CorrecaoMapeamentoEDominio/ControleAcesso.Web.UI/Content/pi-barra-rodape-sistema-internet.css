@@ -1,0 +1,131 @@
+/* BARRA.SISTEMAS */
+
+	/* Classes criadas:
+		.navbar-user
+		.navbar-brand-2linhas
+		.navbar-nav-2linhas
+		.navbar-system-brand-logo
+		.navbar-system-brand-semlogo
+		.navbar-system-brand-nome
+	*/
+	
+	/* para não encobrir o menu da barra.gov quando ele colapsar */
+	.navbar {
+		z-index: 1;
+	}
+	/* altera a cor de fundo do logo do sistema e dos links textuais ao clicar  */
+	a.dropdown-toggle.navbar-system-brand-logo:focus,
+	ul.nav.navbar-nav>li>a:focus {
+		background-color: #e7e7e7;
+	}
+	/* alinha as linhas de base dos logos do Inmetro e do sistema com a linha de base dos links textuais */
+	.navbar-brand {
+		padding: 12px 15px;
+	}
+	.navbar-system-brand-logo {
+		padding: 12px 15px 14px;
+	}
+	.navbar-system-brand-semlogo {
+		padding: 15px;
+	}
+	.navbar-system-brand-nome {
+		font-weight:bold;
+	}	
+	/* inclui borda a direita dos logos do Inmetro e do sistema e do nome do usuario */
+	.navbar-brand,
+	.navbar-system-brand-logo,
+	.navbar-user {
+		border-right: solid 1px #e9e7e9;
+	}
+	/* impede o aparecimento de borda azul em torno do nome do usuario ao clicar nele */
+	a.dropdown-toggle.navbar-user,
+	a.dropdown-toggle.navbar-user:focus {
+		border-color: #e9e7e9;
+	}
+	/* quando houver um dropdown dentro do header da navbar, o dropdown sera alinhado a esquerda */
+	.navbar-header>.dropdown {
+		float:left;
+	}
+	/* transforma o link do dropdown em bloco para poder conter o h1 */
+	.navbar-header>.dropdown>.navbar-system-brand-logo {
+		display:inline-block;
+	}
+	/* reseta e transforma o h1 em inline-block para que ele caiba dentro do <a> do dropdown */
+	.navbar-header>.dropdown>.navbar-system-brand-logo>h1 {
+		display:inline-block;
+		margin:0;
+		padding:0;
+		font-size:14px;
+		line-height:20px;
+	}
+	
+	/* MENU EM 2 LINHAS - utilizar quando o menu tiver muitas opcoes */
+	/* as classes .navbar-brand-2linhas e .navbar-nav-2linhas aplicam os mesmos estilos que a media query <992 */
+	
+	/* aplicar na ul.navbar-nav */
+	.navbar-nav--2linhas {
+			float: none;
+	}
+	.navbar-nav--2linhas:first-child {
+			border-bottom: solid 1px #e9e7e9;
+	}
+	
+	/* aplicar junto com .navbar-brand */
+	.navbar>.container .navbar-brand.navbar-brand-2linhas, 
+	.navbar>.container-fluid .navbar-brand.navbar-brand-2linhas {
+		margin-left: 0;
+	}
+	
+	/* MELHORIA: estilizar dropdown sistema igual dropdown usuario */
+	/* MELHORIA: aumentar ranking do h1 substituindo img por bkg e alt por texto com text-ident:-999px */
+	
+	/* MEDIA QUERIES */
+	
+	/* SM <992px */
+	@media (max-width: 991px) {
+		/* transforma os 2 grupos de links da barra.sistemas em blocos, para que a borda divisoria ocupe toda extensao do menu */
+		.navbar-nav {
+			float: none;
+		}
+		/* coloca borda abaixo do primeiro grupo de links da barra do sistema */
+		.nav.navbar-nav:first-child {
+			border-bottom: solid 1px #e9e7e9;
+		}
+		/* zera margem esquerda do logo do Inmetro para alinhá-lo verticalmente com os links textuais */
+		.navbar>.container .navbar-brand, 
+		.navbar>.container-fluid .navbar-brand {
+			margin-left: 0;
+		}
+	}
+	/* XS <768px */
+	@media (max-width: 767px) {
+		/* impede a criacao de espacos verticais entre logo inmetro e logo sistema, e entre nome do usuario e secoes do sistema */
+		.navbar-nav {
+			margin: 0 ;
+		}
+		/* retira a borda a direita do nome do usuario */
+		.navbar-user {
+			border-right: none;
+		}
+	}
+/* FIM BARRA.SISTEMAS */
+
+
+/* RODAPE.SISTEMAS */
+#footer-sistemas {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  color: #767676;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  background-color: #F8F8F8;
+}
+
+
+/* BARRA.GOV obrigatório APENAS na internet */
+#footer-brasil {
+  background: none repeat scroll 0% 0% #2c66ce;
+  padding: 1em 0px;
+  max-width: 100%;
+}

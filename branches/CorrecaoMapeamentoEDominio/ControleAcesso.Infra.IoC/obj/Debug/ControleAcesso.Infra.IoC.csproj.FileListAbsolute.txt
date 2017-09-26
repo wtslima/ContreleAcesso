@@ -1,0 +1,5 @@
+D:\Inmetro\ControleAcesso\branches\RetirarCorporativo\ControleAcesso.Infra.IoC\bin\Debug\ControleAcesso.Infra.IoC.dll
+D:\Inmetro\ControleAcesso\branches\RetirarCorporativo\ControleAcesso.Infra.IoC\bin\Debug\ControleAcesso.Infra.IoC.pdb
+D:\Inmetro\ControleAcesso\branches\RetirarCorporativo\ControleAcesso.Infra.IoC\obj\Debug\ControleAcesso.Infra.IoC.csprojResolveAssemblyReference.cache
+D:\Inmetro\ControleAcesso\branches\RetirarCorporativo\ControleAcesso.Infra.IoC\obj\Debug\ControleAcesso.Infra.IoC.dll
+D:\Inmetro\ControleAcesso\branches\RetirarCorporativo\ControleAcesso.Infra.IoC\obj\Debug\ControleAcesso.Infra.IoC.pdb

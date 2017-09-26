@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Controle de Acesso";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class=" col-md-offset-1 col-md-6">
+        <div class="page-header">
+            <h1>Bem vindo ao Acesso!</h1>
+        </div>
+        <p>Olá @User.Identity.Name,</p>
+        <p>
+            Esta nova versão do Acesso traz como novidades o cadastro, edição e exclusão de sistemas, perfis e usuários.
+        </p>
+        <p>
+            Esperamos seus comentários, dúvidas e sugestões!
+        </p>
+        <p>
+            <a href="mailto:contato-acesso@inmetro.gov.br">contato-acesso@inmetro.gov.br</a>
+
+        </p>
+    </div>
+    <div class="col-md-4">
+        <br />
+        <h3>Quadro de avisos</h3>
+        <br />
+        <div class="list-group">
+
+            <h4 class="list-group-item-heading">26/02/2016</h4>
+            <p class="list-group-item-text">
+                Foram disponibilizadas as funcionalidades:
+            </p>
+            <ul>
+                <li>Cadastro de sistemas</li>
+                <li>Cadastro de perfis</li>
+                <li>Cadastro de usuários</li>
+                <li>Edição de sistemas</li>
+                <li>Edição de perfis</li>
+                <li>Edição de usuários</li>
+                <li>Exclusão de sistemas</li>
+                <li>Exclusão de perfis</li>
+                <li>Exclusão de usuários</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

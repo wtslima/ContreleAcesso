@@ -1,0 +1,1724 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Corporativo.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:Corporativo.Models.Bairro">
+            <summary>
+            Expõe propriedades e métodos de bairros.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.Id">
+            <summary>
+            Identificador do bairro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.CodigoCorreios">
+            <summary>
+            Código do bairro junto aos Correios.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.Nome">
+            <summary>
+            Nome do bairro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.UF">
+            <summary>
+            Unidade Federativa na qual o bairro se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.Localidade">
+            <summary>
+            Localidade na qual o bairro se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Bairro.FaixasCEP">
+            <summary>
+            Faixas de CEP que ocorrem no bairro.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.CodigoIaf">
+            <summary>
+            Expõe propriedades e métodos de códigos IAF.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoIaf.Codigo">
+            <summary>
+            Identificador do código IAF.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoIaf.Descricao">
+            <summary>
+            Descrição do código IAF.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.CodigoNace">
+            <summary>
+            Expõe propriedades e métodos de códigos NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.Id">
+            <summary>
+            Identificador do código NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.Codigo">
+            <summary>
+            Valor do código NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.CodigoPai">
+            <summary>
+            Identificador do código pai do NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.Descricao">
+             <summary>
+            Descrição em Português do código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.DescricaoEspanhol">
+             <summary>
+            Descrição em Espanhol do código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.DescricaoIngles">
+             <summary>
+            Descrição em Inglês código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.DescricaoHierarquica">
+             <summary>
+            Descrição do valor Computado do código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.Nivel">
+             <summary>
+            Valor do Nivel do código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.Versao">
+             <summary>
+            Valor da Versão do código NACE.
+             </summary>
+        </member>
+        <member name="P:Corporativo.Models.CodigoNace.CodigosIaf">
+            <summary>
+            Código IAF correspondente.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Contato">
+            <summary>
+            Expõe propriedades e métodos de contatos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Contato.Id">
+            <summary>
+            Identificador do Contato.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Contato.Valor">
+            <summary>
+            Valor definido para o contato.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Contato.Tipo">
+            <summary>
+            Tipo de contato.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.DadosEmissao">
+            <summary>
+            Expõe propriedades e métodos de dados de emissão de documentos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosEmissao.Data">
+            <summary>
+            Data de emissão do documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosEmissao.UF">
+            <summary>
+            Unidade Federativa na qual o documento foi emitido.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosEmissao.Pais">
+            <summary>
+            País no qual o documento foi emitido.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosEmissao.OrgaoEmissor">
+            <summary>
+            Orgão que emitiu o documento.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.DadosNascimento">
+            <summary>
+            Expõe propriedades e métodos de dados de nascimento de pessoas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosNascimento.Data">
+            <summary>
+            Data de nascimento da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosNascimento.Localidade">
+            <summary>
+            Localidade na qual a pessoa nasceu.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosNascimento.UF">
+            <summary>
+            Unidade Federativa na qual a pessoa nasceu.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.DadosNascimento.Pais">
+            <summary>
+            País no qual a pessoa nasceu.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Documento">
+            <summary>
+            Expõe propriedades e métodos de documentos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Id">
+            <summary>
+            Identificador do documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Tipo">
+            <summary>
+            Tipo de documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Numero">
+            <summary>
+            Número do documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Emissao">
+            <summary>
+            Informações referentes à emissão do documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Validade">
+            <summary>
+            Validade do documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Documento.Observacao">
+            <summary>
+            Observações sobre o documento.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Empresa">
+            <summary>
+            Expõe propriedades e métodos de empresas.
+            </summary>
+            <remarks>
+            Pessoas Jurídicas são empresas que estão devidamente registradas junto à Receita Federal, portanto, possuem Registro Jurídico.
+            </remarks>
+        </member>
+        <member name="T:Corporativo.Models.Pessoa">
+            <summary>
+            Expõe propriedades e métodos de pessoas (tanto pessoas físicas quanto empresas).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Id">
+            <summary>
+            Identificador da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Nome">
+            <summary>
+            Nome da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Contatos">
+            <summary>
+            Lista de contatos da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Vinculos">
+            <summary>
+            Lista de vínculos da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Documentos">
+            <summary>
+            Lista de documentos da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pessoa.Enderecos">
+            <summary>
+            Lista de endereços da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Empresa.PaisOrigem">
+            <summary>
+            País de origem da empresa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Empresa.RegistroJuridico">
+            <summary>
+            Informações jurídicas da empresa (aplicável apenas a empresas nacionais).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Empresa.CNPJ">
+            <summary>
+            Informações do CNPJ (Cadastro Nacional de Pessoa Jurídica) da empresa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Empresa.InscricaoMunicipal">
+            <summary>
+            Informações da Inscrição Municipal da empresa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Empresa.InscricaoEstadual">
+            <summary>
+            Informações da Inscrição Estadual da empresa.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Endereco">
+            <summary>
+            Expõe propriedades e métodos de endereços.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Id">
+            <summary>
+            Identificador do endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Pais">
+            <summary>
+            País no qual o endereço se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.ZipCode">
+            <summary>
+            ZipCode atribuído ao endereço internacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.CEP">
+            <summary>
+            CEP atribuído ao endereço nacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Estado">
+            <summary>
+            Estado/Província/Região na qual o endereço internacional se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Cidade">
+            <summary>
+            Cidade na qual o endereço internacional se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Logradouro">
+            <summary>
+            Logradouro no qual o endereço se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Street">
+            <summary>
+            Logradouro no qual o endereço se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Tipo">
+            <summary>
+            Tipo de endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Numero">
+            <summary>
+            Número do endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Complemento">
+            <summary>
+            Complemento do endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Endereco.Geolocalizacao">
+            <summary>
+            Gelocalização no qual o endereço se localiza.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.EstadoCivil">
+            <summary>
+            Expõe propriedades e métodos de estados civis.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.EstadoCivil.Codigo">
+            <summary>
+            Código do estado civil.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.EstadoCivil.Descricao">
+            <summary>
+            Descrição do estado civil.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.FaixaCep">
+            <summary>
+            Expõe propriedades e métodos de faixas de CEP.
+            </summary>
+            <remarks>
+            Faixas de CEP são intervalos de CEP que podem ocorrer em um determinado bairro ou localiade.
+            </remarks>
+        </member>
+        <member name="T:Corporativo.Models.Geolocalizacao">
+            <summary>
+            Expõe propriedades e métodos de geolocalização. 
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Geolocalizacao.Latitude">
+            <summary>
+            Coordenada de referência do endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Geolocalizacao.Longitude">
+            <summary>
+            Coordenada de referência do endereço.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Geolocalizacao.Altitude">
+            <summary>
+            Coordenada de referência do endereço.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Localidade">
+            <summary>
+            Expõe propriedades e métodos de localidades.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.Codigo">
+            <summary>
+            Código da localidade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.Nome">
+            <summary>
+            Nome da localidade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.UF">
+            <summary>
+            Unidade Federativa na qual a localidade se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.Tipo">
+            <summary>
+            Tipo de localidade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.CEP">
+            <summary>
+            CEP da localidade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.LocalidadeSuperior">
+            <summary>
+            Localidade superior à localidade. De acordo com o tipo, uma localidade pode conter outras localidades.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.CodigoIBGE">
+            <summary>
+            Código da localidade junto ao IBGE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Localidade.FaixasCEP">
+            <summary>
+            Faixas de CEP que ocorrem na localidade.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Logradouro">
+            <summary>
+            Expõe propriedades e métodos de logradouros.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.Id">
+            <summary>
+            Identificador do logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.UF">
+            <summary>
+            Unidade Federativa na qual o logradouro se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.Localidade">
+            <summary>
+            Localidade na qual o logradouro se localiza.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.BairroInicial">
+            <summary>
+            Bairro no qual o logradouro inicia.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.Tipo">
+            <summary>
+            Tipo do logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.Nome">
+            <summary>
+            Nome do logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.BairroFinal">
+            <summary>
+            Bairro no qual o logradouro termina.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.Complemento">
+            <summary>
+            Complemento do logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.CEP">
+            <summary>
+            CEP do logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Logradouro.CodigoCorreios">
+            <summary>
+            Código do logradouro junto aos Correios.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.NaturezaJuridica">
+            <summary>
+            Expõe propriedades e métodos de naturejas jurídicas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NaturezaJuridica.Codigo">
+            <summary>
+            Código da natureza jurídica.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NaturezaJuridica.Descricao">
+            <summary>
+            Descrição da natureza jurídica.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.NivelEscolaridade">
+            <summary>
+            Expõe propriedades e métodos de níveis de escolaridade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NivelEscolaridade.Codigo">
+            <summary>
+            Código do nível de escolaridade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NivelEscolaridade.Descricao">
+            <summary>
+            Descrição do nível de escolaridade.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.NivelNace">
+            <summary>  
+            Expõe propriedades e métodos do nível NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NivelNace.Sigla">
+            <summary>
+            Sigla do nível NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.NivelNace.Descricao">
+            <summary>
+            Descrição do nível NACE.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Pais">
+            <summary>
+            Expõe propriedades e métodos de países.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pais.CodigoISO3">
+            <summary>
+            Código ISO de 3 caracteres do país.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pais.CodigoISO2">
+            <summary>
+            Código ISO de 2 caracteres do país.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pais.Codigo">
+            <summary>
+            Código do país.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Pais.Nome">
+            <summary>
+            Nome do país.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.PessoaFisica">
+            <summary>
+            Expõe propriedades e métodos de pessoas físicas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.Id">
+            <summary>
+            Identificador da pessoa física.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.Sexo">
+            <summary>
+            Sexo da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.NomeMae">
+            <summary>
+            Nome da mãe.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.NomePai">
+            <summary>
+            Nome do pai.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.CPF">
+            <summary>
+            Informações do CPF (Cadastro de Pessoas Físicas).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.Nascimento">
+            <summary>
+            Informações referentes ao nascimento da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.EstadoCivil">
+            <summary>
+            Estado civil da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.NivelEscolaridade">
+            <summary>
+            Nível de escolaridade da pessoa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.PessoaFisica.Foto">
+            <summary>
+            URL para ação que retorna a foto da pessoa física (ou foto serializada em Base64).
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Regimento">
+            <summary>
+            Expõe as propriedades do Regimento
+            </summary>
+            <remarks>Contem informações referentes à publicação de uma determinada estrutura hierarquica de Unidades Organizacionais. </remarks>
+        </member>
+        <member name="P:Corporativo.Models.Regimento.Id">
+            <summary>
+            Identificador do Regimento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Regimento.Descricao">
+            <summary>
+            Descrição do Regimento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Regimento.Publicacao">
+            <summary>
+            Data da publicação do Regimento.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.RegistroJuridico">
+            <summary>
+            Informações jurídicas da empresa (aplicável apenas a empresas nacionais).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.RegistroJuridico.Abertura">
+            <summary>
+            Data de abertura da empresa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.RegistroJuridico.RazaoSocial">
+            <summary>
+            Razão Social da empresa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.RegistroJuridico.SituacaoCadastralReceitaFederal">
+            <summary>
+            Situação cadastral da empresa junto à Receita Federal.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.RegistroJuridico.NaturezaJuridica">
+            <summary>
+            Natureza jurídica da empresa.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.TipoContato">
+            <summary>
+            Expõe propriedades e métodos de tipos de contatos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoContato.Codigo">
+            <summary>
+            Código do tipo de contato.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoContato.Descricao">
+            <summary>
+            Descrição do tipo de contato.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.TipoDocumento">
+            <summary>
+            Expõe propriedades e métodos de tipos de documentos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoDocumento.Id">
+            <summary>
+            Identificador do tipo de documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoDocumento.Descricao">
+            <summary>
+            Descrição do tipo de documento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoDocumento.TipoPessoa">
+            <summary>
+            Tipo de pessoa a qual esse tipo de documento se aplica.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoDocumento.Unico">
+            <summary>
+            Define se a pessoa pode ter apenas um único documento deste tipo.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.TipoLogradouro">
+            <summary>
+            Expõe propriedades e métodos de tipos de logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoLogradouro.Codigo">
+            <summary>
+            Código do tipo de logradouro.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.TipoLogradouro.Descricao">
+            <summary>
+            Descrição do tipo de logradouro.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.UnidadeFederativa">
+            <summary>
+            Expõe propriedades e métodos de unidades federativas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeFederativa.Sigla">
+            <summary>
+            Sigla da unidade federativa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeFederativa.Nome">
+            <summary>
+            Nome da unidade federativa.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeFederativa.Regiao">
+            <summary>
+            Região geográfica na qual se situa a unidade federativa. 
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.UnidadeOrganizacional">
+            <summary>
+            Expõe as propriedades e métodos de Unidade Organizacional.
+            </summary>
+            <remarks>
+            
+            </remarks>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Codigo">
+            <summary>
+            Identificador da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Sigla">
+            <summary>
+            Sigla da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Nome">
+            <summary>
+            Nome da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.UnidadePrincipal">
+            <summary>
+            Informação sobre o tipo de Unidade Organizacional(se é Unidade Principal ou Unidade Organizacional).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Regimental">
+            <summary>
+            Informação sobre a natureza do Regimento(se é Regimental ou Não-Regimental).
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Regimento">
+            <summary>
+            Informações do Regimento.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Criacao">
+            <summary>
+            Data da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.InicioExtincao">
+            <summary>
+            Data de início da extinção da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.Desativacao">
+            <summary>
+            Data da desativação da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.CodigoPai">
+            <summary>
+            Código da Unidade Principal.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.UnidadeOrganizacional.CaminhoCompleto">
+            <summary>
+            Caminho completo da Unidade Organizacional.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.VersaoNace">
+            <summary>
+            Expõe propriedades e métodos da versão NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.VersaoNace.Id">
+            <summary>
+            Identificador da versão NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.VersaoNace.Codigo">
+            <summary>
+            Valor da versão NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.VersaoNace.DataVersao">
+            <summary>
+            Data da versão NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.VersaoNace.VersaoAtual">
+            <summary>
+            Booleano que indica se a versão NACE é atual ou não.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.Vinculo">
+            <summary>
+            Expõe propriedades e métodos de vínculos.
+            </summary>
+            <remarks>
+            Vínculos são formas pelas quais uma pessoa (física ou empresa) se relaciona com o INMETRO.
+            </remarks>
+        </member>
+        <member name="P:Corporativo.Models.Vinculo.Id">
+            <summary>
+            Identificador do vínculo.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.Vinculo.Descricao">
+            <summary>
+            Descrição do vínculo.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Recurso`1.ResponseHeaders">
+            <summary>
+            Cabeçalhos retornados na última requisição realizada à API do Corporativo.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Recurso`1.RequestHeaders">
+            <summary>
+            Cabeçalhos a serem enviados na próxima requisição (e subsequentes) realizada à API do Corporativo.
+            </summary>
+        </member>
+        <member name="M:Corporativo.API.Bairros.Get(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de bairros.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="idLocalidade">ID da localidade onde se situa o bairro.</param>
+            <param name="nome">Parte do nome do bairro.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. UF.Sigla+, Localidade.Nome-, Nome+).</param>
+            <returns>Lista de bairros.</returns>
+            <remarks>Esse método ainda não possui suporte para mostrar faixas de CEP, como há na API.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Bairros.Get(System.Int32,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de todos os bairros de uma determinada localidade.
+            </summary>
+            <param name="idLocalidade">ID da localidade onde se situa o bairro.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. UF.Sigla+, Localidade.Nome-, Nome+).</param>
+            <returns>Lista de bairros.</returns>
+            /// <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Bairros.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um bairro em específico.
+            </summary>
+            <param name="id">ID do bairro.</param>
+            <returns>Objeto bairro específico.</returns>
+            <remarks>Esse método ainda não possui suporte para mostrar faixas de CEP, como há na API.</remarks>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de Codigos Nace.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um código nace em específico.
+            </summary>
+            <param name="id">ID do código Nace.</param>
+            <returns>Objeto Código Nace específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.String,System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de um código nace por seu código e versão.
+            </summary>
+            <param name="codigo">Valor do código NACE.</param>
+            <param name="versao">Valor da versão do código NACE.</param>
+            <returns>Objeto Código Nace específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de um código nace específico.
+            </summary>
+            <param name="valor">Valor do Código Nace ou parte da Descrição do código.</param>
+            <returns>Objeto Empresa específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.GetAsync(System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista completa de códigos NACE de uma determinada versão.
+            </summary>
+            <returns>Lista completa de códigos NACE de uma determinada versão.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Collections.Generic.List{Corporativo.Models.ConsultaNace},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de códigos NACE por pares de códigos e versões.
+            </summary>
+            <param name="codigos">Lista de pares de códigos e versões NACE cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, Descricao-).</param>
+            <returns>Lista de códigos NACE.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Collections.Generic.List{Corporativo.Models.ConsultaNace},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de códigos NACE por pares de códigos e versões.
+            </summary>
+            <param name="codigos">Lista de pares de códigos e versões NACE cujos registros se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, Descricao-).</param>
+            <returns>Lista de códigos NACE.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Collections.Generic.IEnumerable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de códigos NACE por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de códigos NACE cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de códigos NACE.</returns>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get(System.Collections.Generic.IEnumerable{System.Int32},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as códigos NACE por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de códigos NACE cujos registros se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de códigos NACE.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.CodigosNace.Get``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">
+            <summary>
+            Preenche uma determinada propriedade dos objetos de uma lista com base no resultado da consulta de códigos NACE.
+            </summary>
+            <typeparam name="T">Tipo dos objetos contidos na lista.</typeparam>
+            <param name="lista">Lista de objetos que possuem propriedades a serem atualizadas.</param>
+            <param name="propriedadeOrigemId">Nome da propriedade que contem o ID do código NACE.</param>
+            <param name="propriedadeAtualizar">Nome da propriedade que será preenchida com o respectivo objeto retornado pela busca.</param>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para atualizar toda a lista.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de empresas.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="nome">Parte do nome fantasia da empresa.</param>
+            <param name="razaoSocial">Pa    rte da razão social da empresa.</param>
+            <param name="siglaUf">Sigla da unidade federativa de algum dos endereços da empresa.</param>
+            <param name="idLocalidade">Id da localidade (distrito, município, ou povoado) de algum dos endereços da empresa.</param>
+            <param name="idBairro">Id do bairro de algum dos endereços da empresa.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <param name="nomeExato">Nome fantasia completo da empresa (exato).</param>
+            <param name="nomeOuRazaoSocial">Parte do nome fantasia ou parte da razão social da empresa.</param>
+            <returns>Lista de empresas.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de empresas em um determinado endereço.
+            </summary>
+            <param name="cep">CEP do endereço a ser procurado.</param>
+            <param name="numero">Número do endereço a ser procurado.</param>
+            <param name="complemento">Complemento do endereço a ser procurado.</param>
+            <param name="porPagina">Página que se deseja resgatar.</param>
+            <param name="pagina">Parte do nome da empresa.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de empresas para endereço informado.
+            </summary>
+            <param name="siglaUf">Unidade Federativa da localização.</param>
+            <param name="localidade">Parte do nome da localidade a qual se deseja limitar os resultados.</param>
+            <param name="bairro">Parâmetro opcional com parte do nome do bairro a qual se deseja limitar os resultados.</param>
+            <param name="logradouro">Parâmetro opcional com parte do nome do logradouro a qual se deseja limitar os resultados.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Collections.Generic.IEnumerable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de empresas por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de empresas cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Collections.Generic.IEnumerable{System.Int32},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as empresas por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de empresas cujos registros se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Collections.Generic.IEnumerable{System.String},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de empresas por seus CNPJs.
+            </summary>
+            <param name="cnpjs">Lista de CNPJs de empresas cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as empresas por seus CNPJs.
+            </summary>
+            <param name="cnpjs">Lista de CNPJs de empresas cujos registros se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">
+            <summary>
+            Preenche uma determinada propriedade dos objetos de uma lista com base no resultado da consulta de empresas.
+            </summary>
+            <typeparam name="T">Tipo dos objetos contidos na lista.</typeparam>
+            <param name="lista">Lista de objetos que possuem propriedades a serem atualizadas.</param>
+            <param name="propriedadeOrigemId">Nome da propriedade que contem o ID da empresa.</param>
+            <param name="propriedadeAtualizar">Nome da propriedade que será preenchida com o respectivo objeto retornado pela busca.</param>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para atualizar toda a lista.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Single,System.Single,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de empresas próximas a uma determinada coordenada geográfica.
+            </summary>
+            <param name="latitude">Latitude do ponto de referência.</param>
+            <param name="longitude">Longitude do ponto de referência.</param>
+            <param name="distancia">Distância máxima da qual se deseja encontrar empresas (a partir do ponto de referência).</param>
+            <param name="siglaUf">Sigla da unidade federativa a qual se deseja limitar os resultados.</param>
+            <param name="localidade">Parte do nome da localidade a qual se deseja limitar os resultados.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, PaisOrigem-).</param>
+            <returns>Lista de empresas.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de uma empresa em específico.
+            </summary>
+            <param name="id">ID da empresa.</param>
+            <returns>Objeto Empresa específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de uma empresa em específico.
+            </summary>
+            <param name="cnpj">CNPJ da empresa.</param>
+            <returns>Objeto Empresa específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Post(Corporativo.Models.Empresa)">
+            <summary>
+            Insere uma nova empresa na base de dados.
+            </summary>
+            <param name="empresa">Objeto Empresa a ser inserido.</param>
+            <returns>Objeto Empresa obtido da base de dados após a inserção.</returns>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Put(Corporativo.Models.Empresa)">
+            <summary>
+            Atualiza as informações de uma empresa.
+            </summary>
+            <param name="empresa">Objeto Empresa a ser atualizado.</param>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Patch(Corporativo.Models.Empresa)">
+            <summary>
+            Atualiza parcialmente as informações de uma empresa. (As propriedades que não forem preenchidas não terão seus valores alterados.)
+            </summary>
+            <param name="empresa">Objeto Empresa a ser atualizado.</param>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Delete(System.Int32)">
+            <summary>
+            Remove uma empresa.
+            </summary>
+            <param name="id">ID da empresa a ser removida.</param>
+        </member>
+        <member name="M:Corporativo.API.Empresas.Delete(Corporativo.Models.Empresa)">
+            <summary>
+            Remove uma empresa.
+            </summary>
+            <param name="empresa">Objeto Empresa a ser removido.</param>
+        </member>
+        <member name="M:Corporativo.API.EstadosCivis.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de estados civis.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de estados civis.</returns>
+        </member>
+        <member name="M:Corporativo.API.EstadosCivis.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um estado civil em específico.
+            </summary>
+            <param name="id">ID do estado civil.</param>
+            <returns>Objeto estado civil específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.Localidades.Get(System.Int32,System.Int32,System.String,System.String,System.Nullable{Corporativo.Models.TipoLocalidade},System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de localidades.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="siglaUF">Sigla da unidade federativa.</param>
+            <param name="nome">Parte do nome da localidade.</param>
+            <param name="tipo">Tipo da localidade.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. UF.Sigla+, Nome-).</param>
+            <returns>Lista de localdiades.</returns>
+            <remarks>Esse método ainda não possui suporte para mostrar faixas de CEP, como há na API.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Localidades.Get(System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de localidades situadas em uma determinada unidade federativa.
+            </summary>
+            <param name="siglaUF">Sigla da unidade federativa.</param>
+            <returns>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</returns>
+        </member>
+        <member name="M:Corporativo.API.Localidades.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de uma localidade em específico.
+            </summary>
+            <param name="id">ID da localidade.</param>
+            <returns>Objeto localidade específico.</returns>
+            <remarks>Esse método ainda não possui suporte para mostrar faixas de CEP, como há na API.</remarks>
+        </member>
+        <member name="M:Corporativo.API.Logradouros.Get(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de logradouros.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="siglaUf">Sigla da unidade federativa onde se situa o logradouro.</param>
+            <param name="idLocalidade">ID da localidade onde se situa o logradouro.</param>
+            <param name="idBairro">ID do bairro onde se situa o logradouro.</param>
+            <param name="nome">Parte do nome do logradouro.</param>
+            <param name="codigoTipo">Código do tipo de logradouro procurado.</param>
+            <param name="cep">CEP do logradouro procurado.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. UF.Sigla+, Localidade.Nome-, Bairro.Nome-).</param>
+            <returns>Lista de logradouros.</returns>
+        </member>
+        <member name="M:Corporativo.API.Logradouros.Get(System.Int32,System.String)">
+            <summary>
+            Consulta a API para retornar uma lista de todos os logradouros de um determinado bairro.
+            </summary>
+            <param name="idBairro">ID do bairro onde se situa o logradouro.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. UF.Sigla+, Localidade.Nome-, Bairro.Nome-).</param>
+            <returns>Lista de logradouros.</returns>
+        </member>
+        <member name="M:Corporativo.API.Logradouros.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um logradouro em específico.
+            </summary>
+            <param name="id">ID do logradouro.</param>
+            <returns>Objeto logradouro específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.NaturezasJuridicas.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de naturezas jurídicas.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de naturezas jurídicas.</returns>
+        </member>
+        <member name="M:Corporativo.API.NaturezasJuridicas.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um natureza jurídica em específico.
+            </summary>
+            <param name="codigo">Código do natureza jurídica.</param>
+            <returns>Objeto natureza jurídica específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.NiveisEscolaridade.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de níveis de escolaridade.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de níveis de escolaridade.</returns>
+        </member>
+        <member name="M:Corporativo.API.NiveisEscolaridade.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um nível de escolaridade em específico.
+            </summary>
+            <param name="codigo">Código do nível de escolaridade.</param>
+            <returns>Objeto nível de escolaridade específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.Paises.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de países.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Sigla+).</param>
+            <returns>Lista de países.</returns>
+        </member>
+        <member name="M:Corporativo.API.Paises.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de um país em específico.
+            </summary>
+            <param name="codigoISO3">CodigoISO3 do país.</param>
+            <returns>Objeto país específico.</returns>
+        </member>
+        <member name="T:Corporativo.API.Cliente">
+            <summary>
+            Cliente para conexão à API do Corporativo.
+            </summary>
+        </member>
+        <member name="M:Corporativo.API.Cliente.#ctor(Corporativo.Models.Credencial)">
+            <summary>
+            Cria um novo cliente de conexão à API do Corporativo.
+            </summary>
+            <param name="credencial">Credencial de acesso ao Corporativo.</param>
+        </member>
+        <member name="M:Corporativo.API.Cliente.Correlacionar``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.String,System.String,System.String)">
+            <summary>
+            Correlaciona os itens de duas listas.
+            </summary>
+            <typeparam name="T1">Tipo da lista a ser atualizada.</typeparam>
+            <typeparam name="T2">Tipo da lista de origem.</typeparam>
+            <typeparam name="Tid">Tipo da propriedade utilizada para correlacionar as duas listas.</typeparam>
+            <param name="listaDestino">Lista a ser atualizada.</param>
+            <param name="listaOrigem">Lista de origem.</param>
+            <param name="propriedadeOrigemId">Nome da propriedade, nos objetos da lista de destino, que contém o identificador da lista de origem.</param>
+            <param name="propriedadeDestinoId">Nome da propriedade que identifica cada registro da segunda lista.</param>
+            <param name="propriedadeAtualizar">Nome da propriedade, na lista de destino, que será preenchida com o respectivo objeto da lista de origem.</param>
+        </member>
+        <member name="P:Corporativo.API.Cliente.PessoasFisicas">
+            <summary>
+            Ponto de acesso às ações do recurso de pessoas físicas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Empresas">
+            <summary>
+            Ponto de acesso às ações do recurso de empresas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.UnidadesFederativas">
+            <summary>
+            Ponto de acesso às ações do recurso de unidades federativas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Localidades">
+            <summary>
+            Ponto de acesso às ações do recurso de localidades.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Bairros">
+            <summary>
+            Ponto de acesso às ações do recurso de bairros.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Logradouros">
+            <summary>
+            Ponto de acesso às ações do recurso de logradouros.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.TiposLogradouros">
+            <summary>
+            Ponto de acesso às ações do recurso de tipos de logradouros.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.TiposContatos">
+            <summary>
+            Ponto de acesso às ações do recurso de tipos de contatos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.TiposDocumentos">
+            <summary>
+            Ponto de acesso às ações do recurso de tipos de documentos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Vinculos">
+            <summary>
+            Ponto de acesso às ações do recurso de vínculos.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.EstadosCivis">
+            <summary>
+            Ponto de acesso às ações do recurso de estados civis.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.NaturezasJuridicas">
+            <summary>
+            Ponto de acesso às ações do recurso de naturezas jurídicas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.NiveisEscolaridade">
+            <summary>
+            Ponto de acesso às ações do recurso de níveis de escolaridade.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Paises">
+            <summary>
+            Ponto de acesso às ações do recurso de países.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.CodigosNace">
+            <summary>
+            Ponto de acesso às ações do recurso de códigos NACE.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.UnidadesOrganizacionais">
+            <summary>
+            Ponto de acesso às ações do recurso de Unidades Organizacionais.
+            </summary>
+        </member>
+        <member name="P:Corporativo.API.Cliente.Info">
+            <summary>
+            Retorna informações sobre a API.
+            </summary>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de pessoas físicas.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="nome">Parte do nome da pessoa física.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, Nascimento.Data-).</param>
+            <returns>Lista de pessoas físicas.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get(System.Collections.Generic.IEnumerable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista paginada de pessoas físicas por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de pessoas físicas cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, Nascimento.Data-).</param>
+            <returns>Lista de pessoas físicas.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get(System.Collections.Generic.IEnumerable{System.Int32},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as pessoas físicas por seus IDs.
+            </summary>
+            <param name="ids">Lista de IDs de pessoas físicas cujos registros se deseja resgatar.</param>
+            <param name="readToEnd">TRUE caso se queira realizar subsequentes consultas à API até que todos os registros da lista tenham sido obtidos.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Nome+, Nascimento.Data-).</param>
+            <returns>Lista de pessoas físicas.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.GetAsync(System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de pessoas físicas por nome ou parte dele.
+            </summary>
+            <param name="nome">Nome ou parte do nome da pessoa física cujo registro se deseja resgatar.</param>
+            <returns>Lista completa de pessoas físicas com parte do nome idêntica ao informado.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">
+            <summary>
+            Preenche uma determinada propriedade dos objetos de uma lista com base no resultado da consulta de pessoas físicas.
+            </summary>
+            <typeparam name="T">Tipo dos objetos contidos na lista.</typeparam>
+            <param name="lista">Lista de objetos que possuem propriedades a serem atualizadas.</param>
+            <param name="propriedadeOrigemId">Nome da propriedade que contem o ID da pessoa física.</param>
+            <param name="propriedadeAtualizar">Nome da propriedade que será preenchida com o respectivo objeto retornado pela busca.</param>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para atualizar toda a lista.</remarks>
+            <example>
+            <code>
+            public class Avaliador
+            {
+                public int Id { get; set; }
+                public DateTime DataTreinamento { get; set; }
+                public int IdPessoa { get; set; }
+                public Corporativo.Models.PessoaFisica PessoaFisica { get; set; }
+            }
+            
+            var avaliadores = new List&lt;Avaliador&gt;
+            {
+                new Avaliador { Id = 1, IdPessoa = 1, DataTreinamento = new DateTime(2014, 3, 2) }
+            };
+            var cliente = new Corporativo.API.Cliente(new Corporativo.Models.Credencial("fulano@inmetro.gov.br", "123456"));
+            cliente.PessoasFisicas.Get(avaliadores, "IdPessoa", "PessoaFisica");
+            
+            Console.Write(avaliadores[0].PessoaFisica.Nome);
+            </code>
+            </example>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de uma pessoa física em específico.
+            </summary>
+            <param name="id">ID da pessoa física.</param>
+            <returns>Objeto PessoaFisica específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de uma pessoa física em específico.
+            </summary>
+            <param name="cpf">CPF da pessoa física.</param>
+            <returns>Objeto PessoaFisica específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Post(Corporativo.Models.PessoaFisica)">
+            <summary>
+            Insere uma nova pessoa física na base de dados.
+            </summary>
+            <param name="pessoaFisica">Objeto PessoaFisica a ser inserido.</param>
+            <returns>Objeto PessoaFisica obtido da base de dados após a inserção.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Put(Corporativo.Models.PessoaFisica)">
+            <summary>
+            Atualiza as informações de uma pessoa física.
+            </summary>
+            <param name="pessoaFisica">Objeto PessoaFisica a ser atualizado.</param>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Patch(Corporativo.Models.PessoaFisica)">
+            <summary>
+            Atualiza parcialmente as informações de uma pessoa física. (As propriedades que não forem preenchidas não terão seus valores alterados.)
+            </summary>
+            <param name="pessoaFisica">Objeto PessoaFisica a ser atualizado.</param>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Delete(System.Int32)">
+            <summary>
+            Remove uma pessoa física.
+            </summary>
+            <param name="id">ID da pessoa física a ser removida.</param>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.Delete(Corporativo.Models.PessoaFisica)">
+            <summary>
+            Remove uma pessoa física.
+            </summary>
+            <param name="pessoaFisica">Objeto PessoaFisica a ser removido.</param>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.FotoPessoaFisica.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar a foto de uma pessoa física.
+            </summary>
+            <param name="id">ID da pessoa física da qual se deseja obter a foto.</param>
+            <returns>Objeto Image da foto da pessoa.</returns>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.FotoPessoaFisica.Put(System.Int32,System.String)">
+            <summary>
+            Define a foto para uma pessoa física.
+            </summary>
+            <param name="id">ID da pessoa física para a qual se deseja alterar a foto.</param>
+            <param name="fotoPath">Caminho físico do arquivo de imagem.</param>
+        </member>
+        <member name="M:Corporativo.API.PessoasFisicas.FotoPessoaFisica.Delete(System.Int32)">
+            <summary>
+            Remove a foto de uma determinada pessoa física.
+            </summary>
+            <param name="id">ID da pessoa da qual se deseja remover a foto.</param>
+        </member>
+        <member name="M:Corporativo.API.TiposContatos.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de tipos de contatos.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de tipos de contatos.</returns>
+        </member>
+        <member name="M:Corporativo.API.TiposContatos.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de um tipo de contato em específico.
+            </summary>
+            <param name="codigo">Código do tipo de contato.</param>
+            <returns>Objeto tipo de contato específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.TiposDocumentos.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de tipos de documentos.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de tipos de documentos.</returns>
+        </member>
+        <member name="M:Corporativo.API.TiposDocumentos.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um tipo de documento em específico.
+            </summary>
+            <param name="id">ID do tipo de documento.</param>
+            <returns>Objeto tipo de documento específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.TiposLogradouros.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de tipos de logradouros.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de tipos de logradouros.</returns>
+        </member>
+        <member name="M:Corporativo.API.TiposLogradouros.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de um tipo de logradouro em específico.
+            </summary>
+            <param name="codigo">Código do tipo de logradouro.</param>
+            <returns>Objeto tipo de logradouro específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.Get(System.String,System.Boolean,System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Consulta a API para retornar uma lista de UnidadesOrganizaconais.
+            </summary>
+            <param name="sigla">Parte da sigla da unidade organizacional a ser pesquisada.</param>
+            <param name="noRegimentoAtual">Indicação se devem ser retornadas apenas unidades organizacionais do regimento atual.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Sigla+).</param>
+            <param name="unidadePrincipal">Indicação se devem ser retornadas apenas unidades principais.</param>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de uma uo em específico.
+            </summary>
+            <param name="codigo">Código da UO</param>
+            <returns>Objeto Unidade Organizacional específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.GetAsync(System.Boolean,System.Boolean)">
+            <summary>
+            Consulta a API, assincronamente, para retornar todas as Unidades Organizacionais do regimento atual.
+            </summary>
+            <returns>Lista de Unidades Organizacionais.</returns>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.Get(System.Collections.Generic.IEnumerable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as Unidades Organizacionais por seus Codigos.
+            </summary>
+            <param name="codigos">Lista de Codigos das unidades organizacionais cujos registros se deseja resgatar.</param>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Codigo).</param>
+            <returns>Lista de Unidades Organizacionais.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.Get(System.Collections.Generic.IEnumerable{System.Int32},System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista as Unidades Organizacionais por seus Codigos.
+            </summary>
+            <param name="codigos">Lista de Codigos das unidades organizacionais cujos registros se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Codigo).</param>
+            <returns>Lista de Unidades Organizacionais.</returns>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para retornar todas os registros procurados.</remarks>
+        </member>
+        <member name="M:Corporativo.API.UnidadesOrganizacionais.Get``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">
+            <summary>
+            Preenche uma determinada propriedade dos objetos de uma lista com base no resultado da consulta de códigos NACE.
+            </summary>
+            <typeparam name="T">Tipo dos objetos contidos na lista.</typeparam>
+            <param name="lista">Lista de objetos que possuem propriedades a serem atualizadas.</param>
+            <param name="propriedadeOrigemId">Nome da propriedade que contem o ID do código NACE.</param>
+            <param name="propriedadeAtualizar">Nome da propriedade que será preenchida com o respectivo objeto retornado pela busca.</param>
+            <remarks>Serão realizadas tantas consultas à API quanto necessário para atualizar toda a lista.</remarks>
+        </member>
+        <member name="M:Corporativo.API.UnidadesFederativas.Get(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de unidades federativas.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Sigla+).</param>
+            <param name="regiao">Sigla da região geográfica na qual se situa a unidade federativa.</param>
+            <returns>Lista de unidades federativas.</returns>
+        </member>
+        <member name="M:Corporativo.API.UnidadesFederativas.Get(System.String)">
+            <summary>
+            Consulta a API para resgatar o registro de uma unidade federativa em específico.
+            </summary>
+            <param name="siglaUf">Sigla da unidade federativa.</param>
+            <returns>Objeto unidade federativa específico.</returns>
+        </member>
+        <member name="M:Corporativo.API.Vinculos.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            Consulta a API para resgatar uma lista de vínculos.
+            </summary>
+            <param name="porPagina">Quantidade de registros a retornar por página.</param>
+            <param name="pagina">Página que se deseja resgatar.</param>
+            <param name="ordem">Define a ordenação da lista retornada (ex. Descricao+).</param>
+            <returns>Lista de vínculos.</returns>
+        </member>
+        <member name="M:Corporativo.API.Vinculos.Get(System.Int32)">
+            <summary>
+            Consulta a API para resgatar o registro de um vínculo em específico.
+            </summary>
+            <param name="id">ID do vínculo.</param>
+            <returns>Objeto vínculo específico.</returns>
+        </member>
+        <member name="T:Corporativo.Models.RequestHeaders`1">
+            <summary>
+            Expõe referências aos cabeçalhos HTTP relevantes à API.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.RequestHeaders`1.Projections">
+            <summary>
+            Projeções que podem ser aplicadas para manipular a resposta.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.RequestHeaders`1.ProjectionsHeaders`1">
+            <summary>
+            Expõe referências aos cabeçalhos HTTP relativos a projeções.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Models.RequestHeaders`1.ProjectionsHeaders`1.Campos(System.String)">
+            <summary>
+            Determina quais propriedades devem estar preenchidas nos objetos retornados pela consulta.
+            </summary>
+            <param name="valores">Lista de propriedades (separadas por vírgulas) que devem vir preenchidas.</param>
+            <remarks>Os nomes das propriedades são case-sensitive.</remarks>
+        </member>
+        <member name="M:Corporativo.Models.ProjectionHeadersExtensions.ApenasPrimeiroEndereco``1(Corporativo.Models.RequestHeaders{``0}.ProjectionsHeaders{``0},System.Boolean)">
+            <summary>
+            Determina se apenas o primeiro endereço de cada elemento da lista de ser retornado.
+            </summary>
+            <param name="valor">TRUE para retornar apenas o primeiro endereço.</param>
+        </member>
+        <member name="M:Corporativo.Models.ProjectionHeadersExtensions.IncluirSecao``1(Corporativo.Models.RequestHeaders{``0}.ProjectionsHeaders{``0},System.Boolean)">
+            <summary>
+            Determina se deve ser incluída, no resultado das consultas a Códigos NACE, a informação da seção.
+            </summary>
+            <param name="valor">TRUE para acrescentar a informação da seção.</param>
+        </member>
+        <member name="M:Corporativo.Models.ProjectionHeadersExtensions.FotoBase64``1(Corporativo.Models.RequestHeaders{``0}.ProjectionsHeaders{``0},System.Boolean)">
+            <summary>
+            Determina se a propriedade Foto da PessoaFisica deve ser preenchida com a imagem serializada em Base64, ao invés da URL para a imagem.
+            </summary>
+            <param name="valor">TRUE para preencher a propriedade Foto com a imagem serializada em Base64.</param>
+        </member>
+        <member name="T:Corporativo.Models.ResponseHeaders">
+            <summary>
+            Cabeçalhos comumente retornados por requisições à API do Corporativo.
+            </summary>
+        </member>
+        <member name="T:Corporativo.Models.ResponseHeaders.PaginationHeaders">
+            <summary>
+            Cabeçalhos referentes a paginação.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.TotalCount">
+            <summary>
+            Quantidade total de registros obtidos pela consulta.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.TotalPages">
+            <summary>
+            Quantidade total de páginas geradas.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.PageNumber">
+            <summary>
+            Número da página atual.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.PreviousPageNumber">
+            <summary>
+            Número da página anterior.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.PreviousPage">
+            <summary>
+            URL da página anterior.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.NextPageNumber">
+            <summary>
+            Número da próxima página.
+            </summary>
+        </member>
+        <member name="P:Corporativo.Models.ResponseHeaders.PaginationHeaders.NextPage">
+            <summary>
+            URL da próxima página.
+            </summary>
+        </member>
+        <member name="M:Corporativo.Utils.Url.AddPath(System.Object)">
+            <summary>
+            Adiciona um valor à porção path da url.
+            </summary>
+            <param name="value">Valor a ser adicionado ao path.</param>
+            <param name="validate">Indica se o valor deve ser validado antes de ser incluído no path.</param>
+            <remarks>Este método realiza o escape de caracteres especiais em URL's.</remarks>
+        </member>
+        <member name="M:Corporativo.Utils.Url.AddQueryString(System.String,System.Object,System.Boolean)">
+            <summary>
+            Adiciona um par de chave e valor à porção querystring da url.
+            </summary>
+            <param name="key">Nome do parâmetro da querystring.</param>
+            <param name="value">Valor da querystring.</param>
+            <param name="validate">Indica se o valor deve ser validado antes de ser incluído na querystrnig.</param>
+            <remarks>Este método realiza o escape de caracteres especiais em URL's.</remarks>
+        </member>
+        <member name="M:Corporativo.Utils.Url.GetQueryStringValue(System.String)">
+            <summary>
+            Obtem o valor associado a uma chave na querystring da url.
+            </summary>
+            <param name="key">Chave a ser pesquisada na querystring.</param>
+            <returns>Objeto associado à chave informada.</returns>
+        </member>
+        <member name="M:Corporativo.Utils.Url.RemoveQueryString(System.String)">
+            <summary>
+            Remove um determinado valor da porção querystring da url.
+            </summary>
+            <param name="key"></param>
+        </member>
+    </members>
+</doc>
